@@ -1,0 +1,2408 @@
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script src="https://cdn.lordicon.com/lordicon.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+	<script type="text/javascript" src="G12-Carregamento.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-Main.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-Zoom.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-NF-e.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-TabelaDeTributos.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-TributosDoMovimento.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-CalcularAjusteTributos.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-TributosMunicipaisFuncoesAuxiliares.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-IRRF-INSS.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-GED.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-Cno.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-Toogle.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-CheckBot.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-Anexos.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-Loading.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-ChecagemTransmissao.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-HistoricoMovimentos.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-ControleDeEtiquetas.js" charset="utf-8"></script>
+	<script type="text/javascript" src="G12-AnexosEmail.js" charset="utf-8"></script>
+
+
+	<link rel="stylesheet" href="G12-Style.css">
+</head>
+
+<body>
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">G12 - Transmissão de notas </h2>
+				</div>
+				<div class="panel-body">
+
+					<!-- Campos ocultos que guardam os parâmetros vindos do RM -->
+					<input type="hidden" name="IdMov" id="IdMov">
+					<input type="hidden" name="CodColigada" id="CodColigada">
+					<input type="hidden" name="NumeroMov" id="NumeroMov">
+
+					<!-- INPUTS PARA INTEGRACAO DE AJUSTE DE IMPOSTOS NO RM VIA SOAP  -->
+					<!-- <div class="form-group">
+						<label>COFINS RF</label>
+						<input type="text" class="form-control" name="COFINSRF" placeholder="COFINS RF">
+					</div>
+
+					<div class="form-group">
+						<label>CSLL RF</label>
+						<input type="text" class="form-control" name="CSLLRF" placeholder="CSLL RF">
+					</div>
+
+					<div class="form-group">
+						<label>INSS PJ</label>
+						<input type="text" class="form-control" name="INSSPJ" placeholder="INSS PJ">
+					</div>
+
+					<div class="form-group">
+						<label>IRRF</label>
+						<input type="text" class="form-control" name="IRRF" placeholder="IRRF">
+					</div>
+
+					<div class="form-group">
+						<label>ISS</label>
+						<input type="text" class="form-control" name="ISS" placeholder="ISS">
+					</div>
+
+					<div class="form-group">
+						<label>PIS RF</label>
+						<input type="text" class="form-control" name="PISRF" placeholder="PIS RF">
+					</div> -->
+
+					<!-- DADOS PARA PREENCHIMENTO DO ESPELHO DE NOTA FISCAL -->
+
+					<!-- PRESTADOR DO SERVIÇO (GFILIAL) -->
+					<input type="hidden" name="nomePrestador" id="nomePrestador" readonly>
+					<input type="hidden" name="nomeEmpresarialPrestador" id="nomeEmpresarialPrestador" readonly>
+					<input type="hidden" name="incricaoPrestador" id="incricaoPrestador" readonly>
+					<input type="hidden" name="inscricaoMunicipalPrestador" id="inscricaoMunicipalPrestador" readonly>
+					<input type="hidden" name="telefonePrestador" id="telefonePrestador" readonly>
+					<input type="hidden" name="emailPrestador" id="emailPrestador" readonly>
+					<input type="hidden" name="ruaPrestador" id="ruaPrestador" readonly>
+					<input type="hidden" name="numeroPrestador" id="numeroPrestador" readonly>
+					<input type="hidden" name="bairroPrestador" id="bairroPrestador" readonly>
+					<input type="hidden" name="cidadePrestador" id="cidadePrestador" readonly>
+					<input type="hidden" name="estadoPrestador" id="estadoPrestador" readonly>
+					<input type="hidden" name="cepPrestador" id="cepPrestador" readonly>
+					<!-- campos compostos mantidos por compatibilidade com G12-NF-e.js -->
+					<input type="hidden" name="enderecoPrestador" id="enderecoPrestador" readonly>
+					<input type="hidden" name="municipioPrestador" id="municipioPrestador" readonly>
+
+					<!-- TOMADOR DO SERVIÇO (FCFO) -->
+					<input type="hidden" name="incricaoTomador" id="incricaoTomador" readonly>
+					<input type="hidden" name="telefoneTomador" id="telefoneTomador" readonly>
+					<input type="hidden" name="nomeEmpresarial" id="nomeEmpresarial" readonly>
+					<input type="hidden" name="emailTomador" id="emailTomador" readonly>
+					<input type="hidden" name="ruaTomador" id="ruaTomador" readonly>
+					<input type="hidden" name="numeroTomador" id="numeroTomador" readonly>
+					<input type="hidden" name="bairroTomador" id="bairroTomador" readonly>
+					<input type="hidden" name="cidadeTomador" id="cidadeTomador" readonly>
+					<input type="hidden" name="cepTomador" id="cepTomador" readonly>
+					<!-- campos compostos mantidos por compatibilidade com G12-NF-e.js -->
+					<input type="hidden" name="enderecoTomador" id="enderecoTomador" readonly>
+					<input type="hidden" name="municipioTomador" id="municipioTomador" readonly>
+
+					<!-- LOCAL DE ATUAÇÃO IBS (TMOV) -->
+					<input type="hidden" name="codMuniIbs" id="codMuniIbs" readonly>
+					<input type="hidden" name="codUfIbs" id="codUfIbs" readonly>
+
+					<!-- ITEM (TITMMOV) -->
+					<input type="hidden" name="unidadeItem" id="unidadeItem" readonly>
+					<input type="hidden" name="quantidadeItem" id="quantidadeItem" readonly>
+
+					<!-- TRIBUTAÇÃO -->
+					<input type="hidden" name="tributosNacionais" id="tributosNacionais" readonly>
+					<input type="hidden" name="naturezaOrcamentaria" id="naturezaOrcamentaria" readonly>
+					<input type="hidden" name="irrfDoItem" id="irrfDoItem" readonly>
+					<input type="hidden" name="inssDoItem" id="inssDoItem" readonly>
+					<input type="hidden" name="irrfDescricao" id="irrfDescricao" readonly>
+					<input type="hidden" name="irrfAliquota" id="irrfAliquota" readonly>
+					<input type="hidden" name="irrfTipoDePessoa" id="irrfTipoDePessoa" readonly>
+					<input type="hidden" name="inssDescricao" id="inssDescricao" readonly>
+					<input type="hidden" name="inssAliquota" id="inssAliquota" readonly>
+					<input type="hidden" name="tributosMunicipais" id="tributosMunicipais" readonly>
+					<input type="hidden" name="codigoMunicipio" id="codigoMunicipio" readonly>
+					<input type="hidden" name="exercicioFiscal" id="exercicioFiscal" readonly>
+
+					<!-- AJUSTE DO IRRF CLIENTE FORNECEDOR -->
+					<input type="hidden" name="coligadaCliente" id="coligadaCliente" readonly>
+					<input type="hidden" name="irrfCodigoAjuste" id="irrfCodigoAjuste" readonly>
+					<input type="hidden" name="irrfDescricaoAjuste" id="irrfDescricaoAjuste" readonly>
+					<input type="hidden" name="indexIrrCadastro" id="indexIrrCadastro" readonly>
+
+					<!-- AJUSTE DO INSS CLIENTE FORNECEDOR -->
+					<input type="hidden" name="inssCodigoAjuste" id="inssCodigoAjuste" readonly>
+					<input type="hidden" name="inssDescricaoAjuste" id="inssDescricaoAjuste" readonly>
+					<input type="hidden" name="indexInssCadastro" id="indexInssCadastro" readonly>
+
+					<!-- CONTRATO  -->
+					<input type="hidden" name="IDPRD" id="IDPRD" readonly>
+					<input type="hidden" name="idContrato" id="idContrato" readonly>
+
+
+					<!-- PROJETO  -->
+					<input type="hidden" name="revisaoProjeto" id="revisaoProjeto" readonly>
+
+					<!-- HISTÓRICO (TMOVHISTORICO) -->
+					<input type="hidden" name="informacoesComplementaresNota" id="informacoesComplementaresNota"
+						readonly>
+
+					<!-- GED -->
+					<input type="hidden" name="gedInfo" id="gedInfo" readonly>
+					<input type="hidden" name="periodoMedicao" id="periodoMedicao" readonly>
+
+
+					<!-- CONTROLE DE FLUXO DO PROCESSO  -->
+					<input type="hidden" name="atividade" id="atividade" readonly>
+					<input type="hidden" name="qtdeCancelamentos" id="qtdeCancelamentos" readonly>
+					<input type="hidden" name="exibirCheck" id="exibirCheck" readonly>
+
+					<!-- CONTROLE FLUXO DE COMPETENCIA  -->
+					<input type="hidden" name="CompetenciaAlterada" id="CompetenciaAlterada" readonly>
+
+					<!-- CONTROLE DE FLUXO DE RECEBIMENTO  -->
+					<input type="hidden" name="controleDeFluxo" id="controleDeFluxo" readonly>
+
+					<!-- TRANSMISSAO -->
+					<input type="hidden" id="infoTransmOK" name="infoTransmOK">
+					<input type="hidden" id="infoSetorAjuste" name="infoSetorAjuste">
+
+					<!-- RECEBIMENTO -->
+					<input type="hidden" id="infoTransmOKRecebimento" name="infoTransmOKRecebimento">
+					<input type="hidden" id="infoSetorAjusteRecebimento" name="infoSetorAjusteRecebimento">
+
+					<!-- MOVIMENTOS 2.1.02 e 2.2.01-->
+					<input type="hidden" id="historico2102" name="historico2102">
+					<input type="hidden" id="historico2201" name="historico2201">
+					<input type="hidden" id="historicoNumMov2201" name="historicoNumMov2201">
+					<input type="hidden" id="historicoNumMov2102" name="historicoNumMov2102">
+
+					<!-- NOTA FISCAL QUE SERA ENVIADA NO CORPO DO EMAIL -->
+					<!-- CAMPOS PARA GUARDAR INFORMACAO DAS NOTAS BACKLOG FUTURO  -->
+
+
+					<!-- Indicador de carregamento -->
+					<div id="loadingDados" style="display:none; margin-bottom: 16px;">
+						<div class="alert alert-info">
+							<i class="fa fa-spinner fa-spin"></i> Carregando dados do contrato...
+						</div>
+					</div>
+
+					<!-- Mensagem de erro -->
+					<div id="erroDados" style="display:none; margin-bottom: 16px;">
+						<div class="alert alert-danger">
+							<i class="fa fa-exclamation-triangle"></i>
+							<strong>Erro ao carregar dados:</strong> <span id="msgErro"></span>
+						</div>
+					</div>
+
+					<!-- IDENTIFICAÇÃO DO PROJETO -->
+					<div id="identificacaoProjetoDiv">
+						<div class="panel panel-default" style="margin-bottom: 24px;">
+							<div class="panel-heading">
+								<lord-icon src="https://cdn.lordicon.com/ilgzgiqi.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h3 class="panel-title">
+									<i class="fa fa-building" style="margin-right: 6px;"></i>
+									Identificação do Projeto
+								</h3>
+							</div>
+							<div class="panel-body">
+
+								<div class="row">
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="coligada">Coligada</label>
+											<input type="text" class="form-control" name="coligada" id="coligada"
+												readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="filial">Filial</label>
+											<input type="text" class="form-control" name="filial" id="filial" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="IDMOV_numero">IDMOV</label>
+											<input type="text" class="form-control" name="IDMOV_numero"
+												id="IDMOV_numero" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="idprj">ID Projeto</label>
+											<input type="text" class="form-control" name="idprj" id="idprj" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="cnpj">CNPJ</label>
+											<input type="text" class="form-control" name="cnpj" id="cnpj" readonly>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="nome_filial">Nome da filial</label>
+											<input type="text" class="form-control" name="nome_filial" id="nome_filial"
+												readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="centro_de_custo">Código do Centro de Custo</label>
+											<input type="text" class="form-control" name="centro_de_custo"
+												id="centro_de_custo" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="nome_centro_de_custo">Nome do Centro de Custo</label>
+											<input type="text" class="form-control" name="nome_centro_de_custo"
+												id="nome_centro_de_custo" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="codigo_do_projeto">Código do Projeto</label>
+											<input type="text" class="form-control" name="codigo_do_projeto"
+												id="codigo_do_projeto" readonly>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="descricao_projeto">Descrição do Projeto</label>
+											<input type="text" class="form-control" name="descricao_projeto"
+												id="descricao_projeto" readonly>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-5">
+										<div class="form-group">
+											<label for="rua_projeto">Rua</label>
+											<input type="text" class="form-control" name="rua_projeto" id="rua_projeto"
+												readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="numero_endereco_projeto">Número</label>
+											<input type="text" class="form-control" name="numero_endereco_projeto"
+												id="numero_endereco_projeto" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="bairro_projeto">Bairro</label>
+											<input type="text" class="form-control" name="bairro_projeto"
+												id="bairro_projeto" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="complemento_projeto">Complemento</label>
+											<input type="text" class="form-control" name="complemento_projeto"
+												id="complemento_projeto" readonly>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="cidade_projeto">Cidade</label>
+											<input type="text" class="form-control" name="cidade_projeto"
+												id="cidade_projeto" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="estado_projeto">Estado</label>
+											<input type="text" class="form-control" name="estado_projeto"
+												id="estado_projeto" readonly>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="fiscalMedicao">Fiscal de Medição</label>
+											<input type="text" name="fiscalMedicao" id="fiscalMedicao"
+												class="form-control" readonly>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-6">
+										<label for="art">ART</label>
+										<input type="text" name="art" id="art" class="form-control" readonly>
+									</div>
+									<div class="col-md-6">
+										<label for="cno">CNO</label>
+										<input type="text" name="cno" id="cno" class="form-control" readonly>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- DETALHES DO CONTRATO -->
+					<div id="detalhesContrato">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/hnqamtrw.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h3 class="panel-title">
+									<i class="fa fa-file-text" style="margin-right: 6px;"></i>
+									Detalhes do Contrato
+								</h3>
+							</div>
+							<div class="panel-body">
+
+								<div class="row">
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="numero_contrato">Número do Contrato</label>
+											<input type="text" class="form-control" name="numero_contrato"
+												id="numero_contrato" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="tipo_contrato">Tipo de Contrato</label>
+											<input type="text" class="form-control" name="tipo_contrato"
+												id="tipo_contrato" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="numero_licitacao">Número da Licitação</label>
+											<input type="text" class="form-control" name="numero_licitacao"
+												id="numero_licitacao" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="codigo_cliente">Código do Cliente</label>
+											<input type="text" class="form-control" name="codigo_cliente"
+												id="codigo_cliente" readonly>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="data_contrato">Data do Contrato</label>
+											<input type="text" class="form-control" name="data_contrato"
+												id="data_contrato" readonly>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="data_inicio_contrato">Data de Início</label>
+											<input type="text" class="form-control" name="data_inicio_contrato"
+												id="data_inicio_contrato" readonly>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="data_termino">Data de Término</label>
+											<input type="text" class="form-control" name="data_termino"
+												id="data_termino" readonly>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="periodicidade_medicao">Periodicidade de Medição</label>
+											<input type="text" class="form-control" name="periodicidade_medicao"
+												id="periodicidade_medicao" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="condicao_pagamento">Condição de Pagamento</label>
+											<input type="text" class="form-control" name="condicao_pagamento"
+												id="condicao_pagamento" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="nome_cliente">Nome do cliente</label>
+											<input type="text" class="form-control" name="nome_cliente"
+												id="nome_cliente" readonly>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="cnpjCliente">CNPJ do Cliente</label>
+											<input type="text" class="form-control" name="cnpjCliente" id="cnpjCliente"
+												readonly>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="nome_produto">Nome do Produto</label>
+											<input type="text" class="form-control" name="nome_produto"
+												id="nome_produto" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="codigo_produto">Código do Produto</label>
+											<input type="text" class="form-control" name="codigo_produto"
+												id="codigo_produto" readonly>
+										</div>
+									</div>
+
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<label for="unidade_produto">Unidade do produto</label>
+										<input type="text" name="unidade_produto" id="unidade_produto"
+											class="form-control" readonly>
+									</div>
+									<div class="col-md-4">
+										<label for="quantidade_produto">Quantidade do produto</label>
+										<input type="text" name="quantidade_produto" id="quantidade_produto"
+											class="form-control" readonly>
+									</div>
+									<div class="col-md-4">
+										<label for="unidade_produto">Valor do item</label>
+										<input type="text" name="valor_item" id="valor_item" class="form-control"
+											readonly>
+									</div>
+								</div>
+								<div class="row" style="margin-top: 10px !important;">
+									<div class="col-md-4">
+										<label for="valorBrutoOriginal">Valor bruto original</label>
+										<input type="text" name="valorBrutoOriginal" id="valorBrutoOriginal"
+											class="form-control" readonly>
+									</div>
+									<div class="col-md-4">
+										<label for="valorLiquidoOriginal">Valor líquido original</label>
+										<input type="text" name="valorLiquidoOriginal" id="valorLiquidoOriginal"
+											class="form-control" readonly>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- SECAO DE HISTORICO DO MOVIMENTO  - SEPARADA DOS DEMAIS PONTOS DO FORMULARIO  -->
+					<div id="historicoMovimento">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/yxsbonud.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Histórico do movimento</h2>
+							</div>
+							<div class="panel-body">
+								<div id="historicomovimento">
+									<div class="row">
+										<div class="vol-md-12">
+											<label for="historicoMovimento">Histórico do movimento</label>
+											<textarea name="historicoMovimento" id="historicoMovimento"
+												class="form-control" rows="5">
+
+									</textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<!-- SECAO DE ANEXOS DO GED RM  -->
+					<div id="anexosRm">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/yrtftktn.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Anexos</h2>
+							</div>
+							<div class="panel-body">
+								<div id="gedAnexos">
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- APROVACAO DO SETOR TECNICO  -->
+					<div id="aprovacaoSetorTecnico">
+						<div class="panel panel-default" style="margin-bottom: 16px;">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/ietuubpb.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Aprovação do setor técnico</h2>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12"><label for="ajusteSetorTecnico">Informações para
+											ajuste</label>
+										<textarea name="ajusteSetorTecnico" id="ajusteSetorTecnico" class="form-control"
+											placeholder="Nenhum ajuste informado"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- VALIDACAO CONTRATOS  -->
+					<div id="validacaoContratos">
+						<div class="panel panel-default" style="margin-bottom: 16px;">
+							<div class="panel-heading">
+								<lord-icon src="https://cdn.lordicon.com/imeqmosk.json" trigger="loop" delay="1000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Validação de contratos</h2>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12"><label for="ajusteContratosValidacao">Informações para
+											ajuste</label>
+										<textarea name="ajusteContratosValidacao" id="ajusteContratosValidacao"
+											class="form-control" placeholder="Nenhum ajuste informado"></textarea>
+									</div>
+									<div class="col-md-4">
+										<label for="CNOPB">CNO PARA AJUSTE</label>
+										<input type="text" name="CNOPB" id="CNOPB" class="form-control">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- TRIBUTAÇÃO -->
+					<div id="tributacao">
+						<div class="panel panel-default" style="margin-bottom: 24px;">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/rhmhivzj.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h3 class="panel-title">
+									<i class="fa fa-calculator" style="margin-right: 6px;"></i>
+									Tributação
+								</h3>
+							</div>
+							<div class="panel-body">
+
+								<div class="row" style="margin-bottom: 12px;">
+									<div class="col-md-6">
+										<div class="form-group" style="margin-bottom: 0;">
+											<label for="naturezaOrcamentariaDisplay">Natureza Orçamentária</label>
+											<p id="naturezaOrcamentariaDisplay" class="form-control-static">—</p>
+										</div>
+									</div>
+								</div>
+
+								<h4 style="margin-top: 16px; margin-bottom: 8px;">
+									<i class="fa fa-globe" style="margin-right: 4px;"></i>Tributos Do Movimento
+								</h4>
+								<div id="tabelaTributosNacionais">
+									<p class="text-muted">Aguardando carregamento...</p>
+								</div>
+
+								<h4 style="margin-top: 20px; margin-bottom: 8px;">
+									<i class="fa fa-building-o" style="margin-right: 4px;"></i>Tributos Municipais
+								</h4>
+								<div id="tabelaTributosMunicipais">
+									<p class="text-muted">Aguardando carregamento...</p>
+								</div>
+
+								<div id="dataDeCompetenciaDiv">
+									<div class="row">
+										<h4 style="margin-left: 18px">Data de competência fiscal</h4>
+										<div class="col-md-4">
+											<div class="form-group alteracao-competencia"
+												style="display: flex; flex-direction: column;">
+												<div class="input-group">
+													<input class="form-control" type="text" id="dataDeCompetencia"
+														name="dataDeCompetencia" data-mask="00/00/0000"
+														onfocus="pickerDate(this)" readonly>
+													<div class="input-group-addon"><span
+															class="fluigicon fluigicon-calendar"></span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div id="botoesTributos">
+
+									<button type="button" class="btn btn-info btn-sm"
+										onclick="exibirTabelaAtualizarTributos()"> Ajustar Tributo do movimento</button>
+									</button>
+
+									<button type="button" class="btn btn-info btn-sm"
+										onclick="exibirTabelaCdastrarMunicipais()"> Cadastrar / Ajustar Tributo
+										Municipal</button>
+									</button>
+									<button type="button" class="btn btn-info btn-sm" onclick="ajusteCompetencia()">
+										Ajustar Competência</button>
+									</button>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- DIV PARA EXIBICAO DOS IMPOSTOS QUE PODEM SER AJUSTADOS  -->
+					<div id="impostosajustaveis" class="invisible zoom-overlay">
+						<div id="ajustesTabelaAjusteImpostos" class="zoom-modal">
+							<div class="zoom-modal-header">
+								<h4><i class="fa fa-calculator"></i> Ajustar Tributos do Movimento</h4>
+							</div>
+							<div class="zoom-modal-body">
+								<table id="tblajustarimpostos" tablename="tblajustarimpostos"
+									class="table table-condensed table-striped" noaddbutton="true">
+									<thead class="fs-display-none">
+										<tr>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="card-imposto">
+											<td>
+
+												<div class="form-group">
+													<label for="impostos_selecao">Imposto</label>
+													<input style="z-index: 99999px;" type="zoom" class="form-control"
+														id="impostos_selecao" name="impostos_selecao" data-zoom="{
+                           'datasetId':'G12-AJUSTAR-TRIBUTOS',
+                           'displayKey':'CODIGO',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IMPOSTO',
+                           'fields':[
+                               {
+                                   'field':'CODIGO',
+                                   'label':'IMPOSTO',
+                                   'standard':'true'
+                               },
+                               {
+                                   'field':'TIPO',
+                                   'label':'TIPO',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+
+												</div>
+											</td>
+											<td><label for="valorImposto">Valor</label><input type="text"
+													class="form-control" id="valorImposto" name="valorImposto"></td>
+											<td><label for="aliquota">Alíquota</label><input type="text"
+													class="form-control" id="aliquota" name="aliquota"></td>
+											<td><label for="baseCalculo">Base de Cálculo</label><input type="text"
+													class="form-control" id="baseCalculo" name="baseCalculo"
+													onblur="ajustarValorTributo(this)"></td>
+											<td>
+												<div class="row">
+													<div class="col-md-12">
+														<div
+															style="display:flex; justify-content:flex-end; align-items: center;">
+															<button type="button" class="btn btn-danger btn-sm"
+																onclick="removerComAnimacao(this)">
+																<i class="flaticon flaticon-trash icon-lg"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="zoom-modal-footer">
+								<button type="button" class="btn btn-success btn-sm"
+									onclick="wdkAddChild('tblajustarimpostos'), setSelectedZoomItem();">
+									+ Imposto
+								</button>
+								<button type="button" class="btn btn-danger btn-sm"
+									onclick="esconderTabelaAtualizarTributos()">
+									Fechar e Salvar
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- DIV DOCADASTRO DE TRIBUTOS MUNICIPAIS -->
+					<div id="cadastrotributosmunicipais" class="invisible zoom-overlay">
+						<div id="divcadastrotributosmunicipais" class="zoom-modal">
+							<div class="zoom-modal-header">
+								<h4><i class="fa fa-building-o"></i> Cadastrar / Ajustar Tributo Municipal</h4>
+							</div>
+							<div class="zoom-modal-body">
+								<table id="tblcadastrotributosmuni" tablename="tblcadastrotributosmuni"
+									class="table table-condensed table-striped" noaddbutton="true">
+									<thead class="fs-display-none">
+										<tr>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="card-imposto">
+											<td>
+
+												<div class="form-group">
+													<label for="impostos_selecao_municipal">Imposto</label>
+													<input style="z-index: 99999px;" type="zoom" class="form-control"
+														id="impostos_selecao_municipal"
+														name="impostos_selecao_municipal" data-zoom="{
+                           'datasetId':'G12-CADASTRAR-TRIBUTO-MUNICIPAL',
+                           'displayKey':'CODIGO',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IMPOSTO',
+                           'fields':[
+                               {
+                                   'field':'CODIGO',
+                                   'label':'IMPOSTO',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+
+												</div>
+											</td>
+											<!-- <td><label for="valorImposto">Valor</label><input type="text"
+												class="form-control" id="valorImposto" name="valorImposto"></td> -->
+											<td><label for="aliquotaMunicipal">Alíquota</label><input type="text"
+													class="form-control" id="aliquotaMunicipal"
+													name="aliquotaMunicipal">
+											</td>
+											<td><label for="baseReucaoMunicipal">Base Redução ISS(%)</label><input
+													type="text" class="form-control" id="baseReucaoMunicipal"
+													name="baseReucaoMunicipal"></td>
+											<td>
+												<div class="row">
+													<div class="col-md-12">
+														<div
+															style="display:flex; justify-content:flex-end; align-items: center;">
+															<button type="button" class="btn btn-danger btn-sm"
+																onclick="removerComAnimacao(this)">
+																<i class="flaticon flaticon-trash icon-lg"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="zoom-modal-footer">
+								<button type="button" class="btn btn-success btn-sm"
+									onclick="wdkAddChild('tblcadastrotributosmuni')">
+									+ Imposto
+								</button>
+								<button type="button" class="btn btn-danger btn-sm"
+									onclick="esconderTabelaCdastrarMunicipais()">
+									Fechar e Salvar
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- DIV AJUSTES DO IRRF -->
+					<div id="ajusteIrrf" class="invisible zoom-overlay">
+						<div id="divAjusteIrrf" class="zoom-modal">
+							<div class="zoom-modal-header">
+								<h4><i class="fa fa-percent"></i> Ajuste de IRRF</h4>
+							</div>
+							<div class="zoom-modal-body">
+								<table id="tblAjusteIrrf" tablename="tblAjusteIrrf"
+									class="table table-condensed table-striped" noaddbutton="true">
+									<thead class="fs-display-none">
+										<tr>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="card-imposto">
+											<td style="width: 95%">
+
+												<div class="form-group">
+													<label for="ajusteIrrfZoom">Código IRRF / Descrição </label>
+													<input style="z-index: 99999px;" type="zoom" class="form-control"
+														id="ajusteIrrfZoom" name="ajusteIrrfZoom" data-zoom="{
+                           'datasetId':'G12-IRRF-ZOOM',
+                           'displayKey':'DESCRICAO_IRRF',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IMPOSTO',
+                           'fields':[
+                               {
+                                   'field':'CODIGO_IRRF',
+                                   'label':'CODIGO DO IRRF',
+                                   'standard':'true'
+                               },
+                               {
+                                   'field':'DESCRICAO_IRRF',
+                                   'label':'DESCRICAO DO IRRF',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+
+												</div>
+											</td>
+											<td>
+
+												<div
+													style="width: fit-content; display:flex; justify-content:flex-end; align-items: center;">
+													<button type="button" class="btn btn-danger btn-sm"
+														onclick="removerComAnimacao(this)">
+														<i class="flaticon flaticon-trash icon-lg"></i>
+													</button>
+												</div>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="zoom-modal-footer">
+								<button type="button" class="btn btn-success btn-sm"
+									onclick="wdkAddChild('tblAjusteIrrf')">
+									Adicionar Ajuste
+								</button>
+								<button type="button" class="btn btn-danger btn-sm"
+									onclick="esconderTabelaAtualizarIRRF()">
+									Fechar e Salvar
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- DIV AJUSTES DO INSS -->
+					<div id="ajusteInss" class="invisible zoom-overlay">
+						<div id="divajusteInss" class="zoom-modal">
+							<div class="zoom-modal-header">
+								<h4><i class="fa fa-percent"></i> Ajuste de INSS</h4>
+							</div>
+							<div class="zoom-modal-body">
+								<table id="tblajusteInss" tablename="tblajusteInss"
+									class="table table-condensed table-striped" noaddbutton="true">
+									<thead class="fs-display-none">
+										<tr>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="card-imposto">
+											<td style="width: 95%">
+
+												<div class="form-group">
+													<label for="ajusteInssZoom">Código INSS / Descrição </label>
+													<input style="z-index: 99999px;" type="zoom" class="form-control"
+														id="ajusteInssZoom" name="ajusteInssZoom" data-zoom="{
+                           'datasetId':'G12-INSS-ZOOM',
+                           'displayKey':'DESCRICAO_INSS',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IMPOSTO',
+                           'fields':[
+                               {
+                                   'field':'CODIGO_INSS',
+                                   'label':'CODIGO DO INSS',
+                                   'standard':'true'
+                               },
+                               {
+                                   'field':'DESCRICAO_INSS',
+                                   'label':'DESCRICAO DO INSS',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+
+												</div>
+											</td>
+											<td>
+
+												<div
+													style="width: fit-content; display:flex; justify-content:flex-end; align-items: center;">
+													<button type="button" class="btn btn-danger btn-sm"
+														onclick="removerComAnimacao(this)">
+														<i class="flaticon flaticon-trash icon-lg"></i>
+													</button>
+												</div>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="zoom-modal-footer">
+								<button type="button" class="btn btn-success btn-sm"
+									onclick="wdkAddChild('tblajusteInss')">
+									Adicionar Ajuste
+								</button>
+								<button type="button" class="btn btn-danger btn-sm"
+									onclick="esconderTabelaAtualizarINSS()">
+									Fechar e Salvar
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- DIV CADASTRAR IRRF -->
+					<div id="cadastrarIrrf" class="invisible zoom-overlay">
+						<div id="divCadastrarIrrf" class="zoom-modal">
+							<div class="zoom-modal-header">
+								<h4><i class="fa fa-plus-circle"></i> Cadastrar IRRF</h4>
+							</div>
+							<div class="zoom-modal-body">
+								<table id="tblcAdastrarIrrf" tablename="tblcAdastrarIrrf"
+									class="table table-condensed table-striped" noaddbutton="true">
+									<thead class="fs-display-none">
+										<tr>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="card-imposto">
+											<td style="width: 95%">
+
+												<div class="row">
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="codigoIrrfCadastro">Código IRRF </label>
+															<input type="text" class="form-control"
+																id="codigoIrrfCadastro" name="codigoIrrfCadastro">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="descricaoIrrfCadastro">Descrição IRRF </label>
+															<input type="text" class="form-control"
+																id="descricaoIrrfCadastro" name="descricaoIrrfCadastro">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="aliquotaIrrfCadastro">Alíquota </label>
+															<input type="text" class="form-control"
+																id="aliquotaIrrfCadastro" name="aliquotaIrrfCadastro">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="codOficialIrrfCadastro">Código Oficial </label>
+															<input type="text" class="form-control"
+																id="codOficialIrrfCadastro"
+																name="codOficialIrrfCadastro">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="aplicavelA">Aplicável À</label>
+															<select name="aplicavelA" id="aplicavelA"
+																class="form-control">
+																<option value="F">Pessoa Física</option>
+																<option value="J">Pessoa Jurídica</option>
+																<option value="A">Ambos</option>
+															</select>
+														</div>
+													</div>
+													<div style="width: fit-content; display:flex; justify-content:flex-end; align-items: center;"
+														class="col-md-2">
+														<button type="button" class="btn btn-danger btn-sm"
+															onclick="removerComAnimacao(this)">
+															<i class="flaticon flaticon-trash icon-lg"></i>
+														</button>
+													</div>
+
+												</div>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="zoom-modal-footer">
+								<button type="button" class="btn btn-success btn-sm"
+									onclick="wdkAddChild('tblcAdastrarIrrf')">
+									Adicionar Ajuste
+								</button>
+								<button type="button" class="btn btn-danger btn-sm"
+									onclick="esconderTabelaCadastrarIrrf(), salvarIndex()">
+									Fechar e Salvar
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- DIV CADASTRAR INSS -->
+					<div id="cadastrarInss" class="invisible zoom-overlay">
+						<div id="divCadastrarInss" class="zoom-modal">
+							<div class="zoom-modal-header">
+								<h4><i class="fa fa-plus-circle"></i> Cadastrar INSS</h4>
+							</div>
+							<div class="zoom-modal-body">
+								<table id="tblCadastrarInss" tablename="tblCadastrarInss"
+									class="table table-condensed table-striped" noaddbutton="true">
+									<thead class="fs-display-none">
+										<tr>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="card-imposto">
+											<td style="width: 95%">
+
+												<div class="row">
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="codigoInssCadastro">Identificador</label>
+															<input type="text" class="form-control"
+																name="codigoInssCadastro" id="codigoInssCadastro">
+														</div>
+													</div>
+													<div class="col-md-4">
+														<div class="form-group">
+															<label for="descricaoInssCadastro">Descrição da receita do
+																INSS</label>
+															<input type="text" class="form-control"
+																name="descricaoInssCadastro" id="descricaoInssCadastro">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="aliquotaInssCadastro">Aliquota</label>
+															<input type="text" class="form-control"
+																name="aliquotaInssCadastro" id="aliquotaInssCadastro">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="reducaoInssCadastro">Percentual de
+																Redução</label>
+															<input type="text" class="form-control"
+																name="reducaoInssCadastro" id="reducaoInssCadastro">
+														</div>
+													</div>
+													<div style="width: fit-content; display:flex; justify-content:flex-end; align-items: center;"
+														class="col-md-2">
+														<button type="button" class="btn btn-danger btn-sm"
+															onclick="removerComAnimacao(this)">
+															<i class="flaticon flaticon-trash icon-lg"></i>
+														</button>
+													</div>
+												</div>
+											</td>
+
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="zoom-modal-footer">
+								<button type="button" class="btn btn-success btn-sm"
+									onclick="wdkAddChild('tblCadastrarInss')">
+									Adicionar Ajuste
+								</button>
+								<button type="button" class="btn btn-danger btn-sm"
+									onclick="esconderTabelaCadastrarInss(), salvarIndexInss()">
+									Fechar e Salvar
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- CLIENTE / FORNECEDOR  -->
+					<div id="clienteFornecedor">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/zdwrqfmb.json" trigger="loop" delay="1500"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Cliente/Fornecedor</h2>
+							</div>
+							<div class="panel-body">
+								<div id="irrfInss">
+
+
+								</div>
+
+								<div id="botoesTributos">
+
+									<button type="button" class="btn btn-info btn-sm"
+										onclick="exibirTabelaAtualizarIRRF()">
+										Ajustar IRRF</button>
+									</button>
+
+									<button type="button" class="btn btn-info btn-sm"
+										onclick="exibirTabelaAtualizarINSS()">
+										Ajustar INSS</button>
+									</button>
+
+									<button type="button" class="btn btn-info btn-sm"
+										onclick="exibirTabelaCadastrarIrrf()">
+										Cadastrar IRRF </button>
+									</button>
+
+									<button type="button" class="btn btn-info btn-sm"
+										onclick="exibirTabelaCadastrarInss()">
+										Cadastrar INSS </button>
+									</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- FATURAR NOTAS  -->
+					<div id="faturarNotas">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/tobsqthh.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Faturar notas</h2>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="idmov2">IDMOV movimento 2.1.02</label>
+										<input type="text" name="idmov2" id="idmov2" class="form-control" readonly>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12"><label for="ajusteContratos">Informações para ajuste</label>
+										<textarea name="ajusteContratos" id="ajusteContratos" class="form-control"
+											placeholder="Nenhum ajuste informado"></textarea>
+									</div>
+								</div>
+								<div class="nfe-trigger-wrap" style="display:flex; justify-content: flex-end;">
+									<button type="button" id="btnVisualizarNFe" class="btn-nfe-visualizar"
+										onclick="NFeModal.abrir()">
+										<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+											stroke="currentColor" stroke-width="2">
+											<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+											<polyline points="14 2 14 8 20 8" />
+											<line x1="16" y1="13" x2="8" y2="13" />
+											<line x1="16" y1="17" x2="8" y2="17" />
+											<polyline points="10 9 9 9 8 9" />
+										</svg>
+										Visualizar NFS-e
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ERROR AO ENVIAR AS NOTAS  -->
+					<div id="erroEnvioDeNotasDiv">
+						<div id="erroEnvioDeNotas">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<lord-icon src="https://cdn.lordicon.com/hnqamtrw.json" trigger="loop" delay="1000"
+										style="width:60px;height:60px">
+									</lord-icon>
+									<h2 class="panel-title">Erro ao Enviar Nota</h2>
+								</div>
+								<div class="panel-body">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="errorAoEnviarNotas">Descrição do Erro</label>
+											<textarea class="form-control" name="errorAoEnviarNotas"
+												id="errorAoEnviarNotas" rows="5" readonly></textarea>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="statusEnvio">Status do Envio</label>
+											<input type="text" class="form-control" name="statusEnvio" id="statusEnvio"
+												readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ERROR AO AUTORIZAR AS NOTAS  -->
+					<div id="erroAutorizarNotas">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<lord-icon src="https://cdn.lordicon.com/hnqamtrw.json" trigger="loop" delay="1000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Erro ao Autorizar Nota</h2>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="errorAoAutorizarNotas">Descrição do Erro</label>
+										<textarea class="form-control" name="errorAoAutorizarNotas"
+											id="errorAoAutorizarNotas" rows="5" readonly></textarea>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="statusAutorizacao">Status da Autorização</label>
+										<input type="text" class="form-control" name="statusAutorizacao"
+											id="statusAutorizacao" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- MODAL DE EXIBICAO DE NF-E  -->
+					<div id="modalNFe" class="nfe-overlay" role="dialog" aria-modal="true"
+						aria-labelledby="nfe-modal-title">
+						<div class="nfe-modal">
+
+							<!-- HEADER DO MODAL -->
+							<div class="nfe-modal-header">
+								<span class="nfe-modal-titulo" id="nfe-modal-title">DANFSe v1.0 — Documento Auxiliar da
+									NFS-e</span>
+								<button type="button" class="nfe-fechar" onclick="NFeModal.fechar()"
+									aria-label="Fechar">&times;</button>
+							</div>
+
+							<!-- CORPO DO DOCUMENTO -->
+							<div class="nfe-modal-body" id="nfeDocumento">
+
+								<!-- TOPO: LOGO + TÍTULO + MUNICIPIO -->
+								<div class="nfe-topo">
+									<div class="nfe-topo-logo">
+										<div class="nfe-logo-box">
+											<span class="nfe-logo-sigla">NFS<em>e</em></span>
+											<span class="nfe-logo-sub">Nota Fiscal de<br>Serviço Eletrônica</span>
+										</div>
+									</div>
+									<div class="nfe-topo-centro">
+										<strong>DANFSe v1.0</strong><br>
+										Documento Auxiliar da NFS-e
+									</div>
+									<div class="nfe-topo-municipio" id="nfe-municipio-topo">
+										<!-- preenchido por JS -->
+									</div>
+								</div>
+
+								<!-- CHAVE DE ACESSO -->
+								<div class="nfe-secao nfe-chave-acesso">
+									<span class="nfe-field-label">Chave de Acesso da NFS-e</span>
+									<span class="nfe-field-value" id="nfe-chave-acesso">—</span>
+								</div>
+
+								<!-- LINHA: NÚMERO, COMPETÊNCIA, DATA EMISSÃO -->
+								<div class="nfe-secao nfe-grid-3">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Número da NFS-e</span>
+										<span class="nfe-field-value" id="nfe-numero">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Competência da NFS-e</span>
+										<span class="nfe-field-value" id="nfe-competencia">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Data e Hora da emissão da NFS-e</span>
+										<span class="nfe-field-value" id="nfe-data-emissao">—</span>
+									</div>
+								</div>
+
+								<!-- EMITENTE -->
+								<div class="nfe-secao-titulo">EMITENTE DA NFS-e</div>
+								<div class="nfe-secao nfe-grid-3">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Prestador do Serviço</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">CNPJ / CPF / NIF</span>
+										<span class="nfe-field-value" id="nfe-emitente-cnpj">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Inscrição Municipal</span>
+										<span class="nfe-field-value" id="nfe-emitente-im">—</span>
+									</div>
+								</div>
+								<div class="nfe-secao nfe-grid-2">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Nome / Nome Empresarial</span>
+										<span class="nfe-field-value" id="nfe-emitente-nome">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">E-mail</span>
+										<span class="nfe-field-value" id="nfe-emitente-email">—</span>
+									</div>
+								</div>
+								<div class="nfe-secao nfe-grid-3">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Endereço</span>
+										<span class="nfe-field-value" id="nfe-emitente-end">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Município</span>
+										<span class="nfe-field-value" id="nfe-emitente-mun">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">CEP</span>
+										<span class="nfe-field-value" id="nfe-emitente-cep">—</span>
+									</div>
+								</div>
+
+								<!-- TOMADOR -->
+								<div class="nfe-secao-titulo">TOMADOR DO SERVIÇO</div>
+								<div class="nfe-secao nfe-grid-3">
+									<div class="nfe-field">
+										<span class="nfe-field-label">CNPJ / CPF / NIF</span>
+										<span class="nfe-field-value" id="nfe-tomador-cnpj">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Inscrição Municipal</span>
+										<span class="nfe-field-value" id="nfe-tomador-im">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Telefone</span>
+										<span class="nfe-field-value" id="nfe-tomador-tel">—</span>
+									</div>
+								</div>
+								<div class="nfe-secao nfe-grid-2">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Nome / Nome Empresarial</span>
+										<span class="nfe-field-value" id="nfe-tomador-nome">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">E-mail</span>
+										<span class="nfe-field-value" id="nfe-tomador-email">—</span>
+									</div>
+								</div>
+								<div class="nfe-secao nfe-grid-3">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Endereço</span>
+										<span class="nfe-field-value" id="nfe-tomador-end">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Município</span>
+										<span class="nfe-field-value" id="nfe-tomador-mun">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">CEP</span>
+										<span class="nfe-field-value" id="nfe-tomador-cep">—</span>
+									</div>
+								</div>
+
+								<!-- SERVIÇO -->
+								<div class="nfe-secao-titulo">SERVIÇO PRESTADO</div>
+								<div class="nfe-secao nfe-grid-3">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Código de Tributação Nacional</span>
+										<span class="nfe-field-value" id="nfe-ctn">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Código de Tributação Municipal</span>
+										<span class="nfe-field-value" id="nfe-ctm">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Local da Prestação</span>
+										<span class="nfe-field-value" id="nfe-local">—</span>
+									</div>
+								</div>
+								<div class="nfe-secao">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Descrição do Serviço</span>
+										<span class="nfe-field-value" id="nfe-descricao-servico">—</span>
+									</div>
+								</div>
+
+								<!-- TRIBUTAÇÃO MUNICIPAL -->
+								<div class="nfe-secao-titulo">TRIBUTAÇÃO MUNICIPAL</div>
+								<div class="nfe-secao nfe-grid-4">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Valor do Serviço</span>
+										<span class="nfe-field-value" id="nfe-valor-servico">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">BC ISSQN</span>
+										<span class="nfe-field-value" id="nfe-bc-issqn">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Alíquota Aplicada</span>
+										<span class="nfe-field-value" id="nfe-aliquota">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">ISSQN Apurado</span>
+										<span class="nfe-field-value" id="nfe-issqn-apurado">—</span>
+									</div>
+								</div>
+
+								<!-- TRIBUTAÇÃO FEDERAL -->
+								<div class="nfe-secao-titulo">TRIBUTAÇÃO FEDERAL</div>
+								<div class="nfe-secao nfe-grid-4">
+									<div class="nfe-field">
+										<span class="nfe-field-label">IRRF</span>
+										<span class="nfe-field-value" id="nfe-irrf">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Contrib. Previdenciária - Retida</span>
+										<span class="nfe-field-value" id="nfe-prev">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">PIS</span>
+										<span class="nfe-field-value" id="nfe-pis">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">COFINS</span>
+										<span class="nfe-field-value" id="nfe-cofins">—</span>
+									</div>
+								</div>
+
+								<!-- VALOR TOTAL -->
+								<div class="nfe-secao-titulo">VALOR TOTAL DA NFS-E</div>
+								<div class="nfe-secao nfe-grid-4 nfe-totais">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Valor do Serviço</span>
+										<span class="nfe-field-value" id="nfe-total-servico">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">ISSQN Retido</span>
+										<span class="nfe-field-value" id="nfe-issqn-retido">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Total Retenções Federais</span>
+										<span class="nfe-field-value" id="nfe-total-retencoes">—</span>
+									</div>
+									<div class="nfe-field nfe-destaque">
+										<span class="nfe-field-label">Valor Líquido da NFS-e</span>
+										<span class="nfe-field-value" id="nfe-valor-liquido">—</span>
+									</div>
+								</div>
+
+								<!-- TOTAIS TRIBUTOS -->
+								<div class="nfe-secao-titulo">TOTAIS APROXIMADOS DOS TRIBUTOS</div>
+								<div class="nfe-secao nfe-grid-3 nfe-tributos-aprox">
+									<div class="nfe-field">
+										<span class="nfe-field-label">Federais</span>
+										<span class="nfe-field-value" id="nfe-trib-fed">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Estaduais</span>
+										<span class="nfe-field-value" id="nfe-trib-est">—</span>
+									</div>
+									<div class="nfe-field">
+										<span class="nfe-field-label">Municipais</span>
+										<span class="nfe-field-value" id="nfe-trib-mun">—</span>
+									</div>
+								</div>
+
+								<!-- DETALHAMENTO DOS TRIBUTOS NACIONAIS -->
+								<div class="nfe-secao-titulo">DETALHAMENTO DOS TRIBUTOS NACIONAIS</div>
+								<div class="nfe-secao nfe-detalhe-tributos" id="nfe-detalhe-tributos-nacionais"
+									style="padding: 8px 10px;">—</div>
+
+								<!-- DETALHAMENTO DOS TRIBUTOS MUNICIPAIS -->
+								<div class="nfe-secao-titulo">DETALHAMENTO DOS TRIBUTOS MUNICIPAIS</div>
+								<div class="nfe-secao nfe-detalhe-tributos" id="nfe-detalhe-tributos-municipais"
+									style="padding: 8px 10px;">—</div>
+
+								<!-- INFORMAÇÕES COMPLEMENTARES -->
+								<div class="nfe-secao-titulo">INFORMAÇÕES COMPLEMENTARES</div>
+								<div class="nfe-secao">
+									<div class="nfe-field">
+										<span class="nfe-field-value nfe-inf-comp" id="nfe-inf-comp">—</span>
+									</div>
+								</div>
+
+							</div><!-- /nfe-modal-body -->
+
+							<!-- RODAPÉ COM AÇÕES -->
+							<div class="nfe-modal-footer">
+								<button type="button" class="btn-nfe-imprimir" onclick="NFeModal.imprimir()">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2">
+										<polyline points="6 9 6 2 18 2 18 9" />
+										<path
+											d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+										<rect x="6" y="14" width="12" height="8" />
+									</svg>
+									Imprimir
+								</button>
+								<button type="button" class="btn-nfe-fechar-rodape"
+									onclick="NFeModal.fechar()">Fechar</button>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div id="enviarNota">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<lord-icon src="https://cdn.lordicon.com/dpggoewm.json" trigger="loop" delay="1000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Informações de envio da nota </h2>
+
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="numeroNotas">Número da nota</label>
+											<input type="text" class="form-control" name="numeroNotas" id="numeroNotas"
+												readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="codigoVerificacao">Código de verificação</label>
+											<input type="text" class="form-control" name="codigoVerificacao"
+												id="codigoVerificacao" readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="dataEmissao">Data de emissão</label>
+											<input type="text" class="form-control" name="dataEmissao" id="dataEmissao"
+												readonly>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											<label for="dataAutorizacao">Data de autorização</label>
+											<input type="text" class="form-control" name="dataAutorizacao"
+												id="dataAutorizacao" readonly>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="numeroIdmov2201">Idmov 2.2.01</label>
+											<input type="text" class="form-control" name="numeroIdmov2201"
+												id="numeroIdmov2201" readonly
+												onblur="atualizaMovimnentoManualmente(this)">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="form-group">
+
+											<label>NFSE</label>
+
+											<div class="input-group componentAnexo">
+
+												<input type="hidden" name="notaFiscal" class="descAnexo"
+													value="notaFiscal" />
+
+												<input type="text" id="fnnotaFiscal" name="fnnotaFiscal"
+													class="form-control inputAnexo"
+													placeholder="Selecione a nota fiscal" readonly />
+
+												<span class="input-group-btn">
+													<button type="button" class="btnUpFile btn btn-success"
+														data-acao="upload" onclick="anexo(event)">
+														<i class="flaticon flaticon-paperclip"></i>
+														Anexar
+													</button>
+
+													<button type="button" class="btnViewerFile btn btn-info"
+														data-acao="viewer" style="display:none;">
+														Visualizar
+													</button>
+
+													<button type="button" class="btnDownloadFile btn btn-info"
+														data-acao="download" style="display:none;">
+														Download
+													</button>
+
+												</span>
+
+											</div>
+
+											<div class="portaisNfseWrap">
+												<a class="btn-portal-nfse"
+													href="https://www.nfse.gov.br/EmissorNacional/" target="_blank"
+													rel="noopener noreferrer">Emissor Nacional</a>
+												<a class="btn-portal-nfse"
+													href="https://receita.joaopessoa.pb.gov.br/notafiscal/paginas/portal/index.html"
+													target="_blank" rel="noopener noreferrer">Prefeitura de João
+													Pessoa</a>
+												<a class="btn-portal-nfse"
+													href="https://iss.fazenda.df.gov.br/online/Login/Login.aspx"
+													target="_blank" rel="noopener noreferrer">Prefeitura de Brasília</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12" style="display: flex; justify-content: flex-end;">
+										<button type="button" class="btn btn-info btn-sm"
+											onclick="exibirEdicaoManual()">Preencher
+											Manualmente</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="checagemDeTransmissao">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<lord-icon src="https://cdn.lordicon.com/ietuubpb.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Checagem de transmissão</h2>
+							</div>
+							<div class="panel-body" style="display: flex; gap: 30px;">
+
+								<div class="form-group checagemInfoCSS">
+									<span>As informações da transmissão estão corretas?</span>
+
+									<div class="centralizarBotoes">
+										<button type="button" class="botaoTransmissao" id="infoNfseCorretas"
+											onclick="selecionarBotaoTransmissao(this, '')">NFS-e corretas</button>
+										<button type="button" class="botaoTransmissao" id="infoNfseErradas"
+											onclick="selecionarBotaoTransmissao(this, '')">NFS-e erradas</button>
+									</div>
+
+								</div>
+								<div class="form-group checagemInfoCSS">
+									<span>Informe o setor que fará os ajustes</span>
+
+									<div class="centralizarBotoes">
+										<button type="button" class="botaoTransmissao" id="financeiroReponsavel"
+											onclick="selecionarBotaoTransmissaoSetor(this, '')">Financeiro</button>
+										<button type="button" class="botaoTransmissao" id="tecnicoReponsavel"
+											onclick="selecionarBotaoTransmissaoSetor(this, '')">Técnico</button>
+									</div>
+
+								</div>
+								<div id="reemissaoDiv">
+									<label for="motivoReemissao">Motivo da reemissão</label>
+									<select id="motivoReemissao" name="motivoReemissao" onchange="chagenSelect(this)"
+										class="form-control" onchange="chagenSelect(this)">
+										<option value="">Selecione o motivo</option>
+										<option value="ALTERACAO_VALOR">Alteração de valor</option>
+										<option value="DESCRICAO_ERRADA">Descrição errada</option>
+										<option value="DESCRICAO_INCOMPLETA_PERIODO">Descrição da NF incompleta (faltou
+											período)</option>
+										<option value="DESCRICAO_NATUREZA_SERVICO">Descrição da NF incompleta (faltou
+											natureza dos serviços)</option>
+										<option value="DESCRICAO_NF_INCORRETA">Descrição da NF incorreta</option>
+										<option value="CIDADE_ERRADA">Cidade errada</option>
+										<option value="DATA_ERRADA">Data errada</option>
+										<option value="VALOR_ERRADO">Valor errado</option>
+										<option value="ALIQUOTA_ISS_ERRADO">Alíquota de ISS errada</option>
+										<option value="BASE_ISS_ERRADO">Base do ISS errada (sem dedução)</option>
+										<option value="DADOS_BANCARIOS_ERRADOS">Dados bancários errados</option>
+										<option value="EMPENHO_INVALIDO">Empenho inválido</option>
+										<option value="FALTA_NOTA_EMPENHO">Falta de nota de empenho</option>
+										<option value="INSS_BASE_ERRADA">INSS calculado com base errada (M.O./material
+											não informado)</option>
+										<option value="RVO_REEMITIDO">RVO precisou ser reemitido pela fiscalização
+										</option>
+										<option value="SOLICITACAO_FISCAL">Solicitação da fiscal (sem erros)</option>
+										<option value="outros">Outros</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="ajusteTransmissao">Descrição dos Ajustes</label>
+									<textarea class="form-control" name="ajusteTransmissao" id="ajusteTransmissao"
+										rows="8" cols="90"></textarea>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+
+					<div id="aguardandoRecebimento">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<lord-icon src="https://cdn.lordicon.com/ietuubpb.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">Aguardando Recebimento</h2>
+							</div>
+							<div class="panel-body" style="display: flex; gap: 30px;">
+
+								<div class="form-group checagemInfoCSS">
+									<span>As informações da transmissão estão corretas?</span>
+
+									<div class="centralizarBotoes">
+										<button type="button" class="botaoTransmissao" id="infoNfseCorretasRecebimento"
+											onclick="selecionarBotaoTransmissao(this, 'Recebimento')">NFS-e
+											corretas</button>
+										<button type="button" class="botaoTransmissao" id="infoNfseErradasRecebimento"
+											onclick="selecionarBotaoTransmissao(this, 'Recebimento')">NFS-e
+											erradas</button>
+									</div>
+
+								</div>
+								<div class="form-group checagemInfoCSS">
+									<span>Informe o setor que fará os ajustes</span>
+
+									<div class="centralizarBotoes">
+										<button type="button" class="botaoTransmissao"
+											id="financeiroReponsavelRecebimento"
+											onclick="selecionarBotaoTransmissaoSetor(this, 'Recebimento')">Financeiro</button>
+										<button type="button" class="botaoTransmissao" id="tecnicoReponsavelRecebimento"
+											onclick="selecionarBotaoTransmissaoSetor(this, 'Recebimento')">Técnico</button>
+
+									</div>
+								</div>
+								<div>
+									<label for="motivoReemissaoRecebimento">Motivo da reemissão</label>
+									<select id="motivoReemissaoRecebimento" onchange="chagenSelect(this)"
+										name="motivoReemissaoRecebimento" class="form-control"
+										onchange="chagenSelect(this)">
+										<option value="">Selecione o motivo</option>
+										<option value="ALTERACAO_VALOR">Alteração de valor</option>
+										<option value="DESCRICAO_ERRADA">Descrição errada</option>
+										<option value="DESCRICAO_INCOMPLETA_PERIODO">Descrição da NF incompleta (faltou
+											período)</option>
+										<option value="DESCRICAO_NATUREZA_SERVICO">Descrição da NF incompleta (faltou
+											natureza dos serviços)</option>
+										<option value="DESCRICAO_NF_INCORRETA">Descrição da NF incorreta</option>
+										<option value="CIDADE_ERRADA">Cidade errada</option>
+										<option value="DATA_ERRADA">Data errada</option>
+										<option value="VALOR_ERRADO">Valor errado</option>
+										<option value="ALIQUOTA_ISS_ERRADO">Alíquota de ISS errada</option>
+										<option value="BASE_ISS_ERRADO">Base do ISS errada (sem dedução)</option>
+										<option value="DADOS_BANCARIOS_ERRADOS">Dados bancários errados</option>
+										<option value="EMPENHO_INVALIDO">Empenho inválido</option>
+										<option value="FALTA_NOTA_EMPENHO">Falta de nota de empenho</option>
+										<option value="INSS_BASE_ERRADA">INSS calculado com base errada (M.O./material
+											não informado)</option>
+										<option value="RVO_REEMITIDO">RVO precisou ser reemitido pela fiscalização
+										</option>
+										<option value="SOLICITACAO_FISCAL">Solicitação da fiscal (sem erros)</option>
+										<option value="outros">Outros</option>
+									</select>
+								</div>
+
+
+								<div class="form-group">
+									<label for="ajusteTransmissaoRecebimento">Descrição dos Ajustes</label>
+									<textarea class="form-control" name="ajusteTransmissaoRecebimento"
+										id="ajusteTransmissaoRecebimento" rows="8" cols="90"></textarea>
+								</div>
+
+
+							</div>
+
+
+						</div>
+					</div>
+
+					<div id="ajusteSetorTecnicoPosNotaEmitida">
+						<div class="panel panel-default" style="margin-bottom: 16px;">
+							<div class="panel-heading">
+
+								<lord-icon src="https://cdn.lordicon.com/ietuubpb.json" trigger="loop" delay="2000"
+									style="width:60px;height:60px">
+								</lord-icon>
+								<h2 class="panel-title">ajuste do setor técnico após nota emitida</h2>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="valorAlterado">Valor a ser alterado</label>
+											<input type="text" class="form-control" name="valorAlterado"
+												id="valorAlterado" onblur="ajustarValorDoSetorTecnico(this)">
+										</div>
+									</div>
+									<div class="col-md-4 offset-4" id="avisoVariacaoValorDiv">
+
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12"><label for="ajusteSetorTecnicoPosNota">Informações
+											Ajustadas</label>
+										<textarea name="ajusteSetorTecnicoPosNota" id="ajusteSetorTecnicoPosNota"
+											class="form-control" placeholder="Nenhum ajuste informado"></textarea>
+									</div>
+								</div>
+								<input type="hidden" name="valorAcimaDe1" id="valorAcimaDe1">
+							</div>
+						</div>
+					</div>
+
+					<div id="ajusteFinanceiro">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<img src="Images/wired-flat-453-piggy-bank-hover-pinch.gif"
+									style="width:60px;height:60px" alt="piggy bank" />
+								<h2 class="panel-title">Ajuste Financeiro</h2>
+							</div>
+							<div class="panel-body">
+
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-calculator"></i>
+										<span class="afin-secao-titulo">Ajuste de Tributos do Movimento</span>
+									</div>
+									<div class="afin-secao-body">
+										<table id="tblajustarimpostosSubs" tablename="tblajustarimpostosSubs"
+											class="table table-condensed table-striped" noaddbutton="true">
+											<thead class="fs-display-none">
+												<tr>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="card-imposto">
+													<td>
+
+														<div class="form-group">
+															<label for="impostos_selecao_subs">Imposto</label>
+															<input style="z-index: 99999px;" type="zoom"
+																class="form-control" id="impostos_selecao_subs"
+																name="impostos_selecao_subs" data-zoom="{
+                           'datasetId':'G12-AJUSTAR-TRIBUTOS',
+                           'displayKey':'CODIGO',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IMPOSTO',
+                           'fields':[
+                               {
+                                   'field':'CODIGO',
+                                   'label':'IMPOSTO',
+                                   'standard':'true'
+                               },
+                               {
+                                   'field':'TIPO',
+                                   'label':'TIPO',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+
+														</div>
+													</td>
+													<td><label for="valorImpostoSub">Valor</label><input type="text"
+															class="form-control" id="valorImpostoSub"
+															name="valorImpostoSub"></td>
+													<td><label for="aliquotaSub">Alíquota</label><input type="text"
+															class="form-control" id="aliquotaSub" name="aliquotaSub">
+													</td>
+													<td><label for="baseCalculoSub">Base de Cálculo</label><input
+															type="text" class="form-control" id="baseCalculoSub"
+															name="baseCalculoSub" onblur="ajustarValorTributo(this)">
+													</td>
+													<td>
+														<div class="row">
+															<div class="col-md-12">
+																<div
+																	style="display:flex; justify-content:flex-end; align-items: center;">
+																	<button type="button" class="btn btn-danger btn-sm"
+																		onclick="removerComAnimacao(this)">
+																		<i class="flaticon flaticon-trash icon-lg"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="afin-secao-footer">
+										<button type="button" class="btn btn-success btn-sm"
+											onclick="wdkAddChild('tblajustarimpostosSubs'), setSelectedZoomItem(undefined, 'impostos_selecao_subs');">
+											+ Imposto
+										</button>
+									</div>
+								</div>
+
+								<!-- SECAO: AJUSTE DE TRIBUTOS MUNICIPAIS (REAPROVEITA A ESTRUTURA DE tblcadastrotributosmuni) -->
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-building-o"></i>
+										<span class="afin-secao-titulo">Ajuste de Tributos Municipais</span>
+									</div>
+									<div class="afin-secao-body">
+										<table id="tblcadastrotributosmuniSub" tablename="tblcadastrotributosmuniSub"
+											class="table table-condensed table-striped" noaddbutton="true">
+											<thead class="fs-display-none">
+												<tr>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="card-imposto">
+													<td>
+
+														<div class="form-group">
+															<label for="impostos_selecao_municipal_sub">Imposto</label>
+															<input style="z-index: 99999px;" type="zoom"
+																class="form-control" id="impostos_selecao_municipal_sub"
+																name="impostos_selecao_municipal_sub" data-zoom="{
+                           'datasetId':'G12-CADASTRAR-TRIBUTO-MUNICIPAL',
+                           'displayKey':'CODIGO',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IMPOSTO',
+                           'fields':[
+                               {
+                                   'field':'CODIGO',
+                                   'label':'IMPOSTO',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+
+														</div>
+													</td>
+													<td><label for="aliquotaMunicipalSub">Alíquota</label><input
+															type="text" class="form-control" id="aliquotaMunicipalSub"
+															name="aliquotaMunicipalSub">
+													</td>
+													<td><label for="baseReucaoMunicipalSub">Base Redução
+															ISS(%)</label><input type="text" class="form-control"
+															id="baseReucaoMunicipalSub" name="baseReucaoMunicipalSub">
+													</td>
+													<td>
+														<div class="row">
+															<div class="col-md-12">
+																<div
+																	style="display:flex; justify-content:flex-end; align-items: center;">
+																	<button type="button" class="btn btn-danger btn-sm"
+																		onclick="removerComAnimacao(this)">
+																		<i class="flaticon flaticon-trash icon-lg"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="afin-secao-footer">
+										<button type="button" class="btn btn-success btn-sm"
+											onclick="wdkAddChild('tblcadastrotributosmuniSub'), setSelectedZoomItem(undefined, 'impostos_selecao_municipal_sub');">
+											+ Imposto
+										</button>
+									</div>
+								</div>
+
+								<!-- SECAO: AJUSTE DE IRRF (TABELA PAI E FILHO) -->
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-percent"></i>
+										<span class="afin-secao-titulo">IRRF</span>
+									</div>
+									<div class="afin-secao-body">
+										<table id="tblAjusteIrrfSub" tablename="tblAjusteIrrfSub"
+											class="table table-condensed table-striped" noaddbutton="true">
+											<thead class="fs-display-none">
+												<tr>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="card-imposto">
+													<td>
+
+														<div class="form-group">
+															<label for="irrfCodigoAjusteSub">Código IRRF /
+																Descrição</label>
+															<input style="z-index: 99999px;" type="zoom"
+																class="form-control" id="irrfCodigoAjusteSub"
+																name="irrfCodigoAjusteSub" data-zoom="{
+                           'datasetId':'G12-IRRF-ZOOM',
+                           'displayKey':'DESCRICAO_IRRF',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM IRRF',
+                           'fields':[
+                               {
+                                   'field':'CODIGO_IRRF',
+                                   'label':'CODIGO DO IRRF',
+                                   'standard':'true'
+                               },
+                               {
+                                   'field':'DESCRICAO_IRRF',
+                                   'label':'DESCRICAO DO IRRF',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+															<input type="hidden" id="irrfCodSub" name="irrfCodSub"
+																value="">
+
+														</div>
+													</td>
+													<td>
+														<div class="row">
+															<div class="col-md-12">
+																<div
+																	style="display:flex; justify-content:flex-end; align-items: center;">
+																	<button type="button" class="btn btn-danger btn-sm"
+																		onclick="removerComAnimacao(this)">
+																		<i class="flaticon flaticon-trash icon-lg"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="afin-secao-footer">
+										<button type="button" class="btn btn-success btn-sm"
+											onclick="wdkAddChild('tblAjusteIrrfSub'), setSelectedZoomItem(undefined, 'irrfCodigoAjusteSub');">
+											+ IRRF
+										</button>
+									</div>
+								</div>
+
+								<!-- SECAO: AJUSTE DE INSS (TABELA PAI E FILHO) -->
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-percent"></i>
+										<span class="afin-secao-titulo">INSS</span>
+									</div>
+									<div class="afin-secao-body">
+										<table id="tblAjusteInssSub" tablename="tblAjusteInssSub"
+											class="table table-condensed table-striped" noaddbutton="true">
+											<thead class="fs-display-none">
+												<tr>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="card-imposto">
+													<td>
+
+														<div class="form-group">
+															<label for="inssCodigoAjusteSub">Código INSS /
+																Descrição</label>
+															<input style="z-index: 99999px;" type="zoom"
+																class="form-control" id="inssCodigoAjusteSub"
+																name="inssCodigoAjusteSub" data-zoom="{
+                           'datasetId':'G12-INSS-ZOOM',
+                           'displayKey':'DESCRICAO_INSS',
+                           'maximumSelectionLength':'1',
+                           'placeholder':'SELECIONE UM INSS',
+                           'fields':[
+                               {
+                                   'field':'CODIGO_INSS',
+                                   'label':'CODIGO DO INSS',
+                                   'standard':'true'
+                               },
+                               {
+                                   'field':'DESCRICAO_INSS',
+                                   'label':'DESCRICAO DO INSS',
+                                   'standard':'true'
+                               }
+                           ]
+                       }">
+															<input type="hidden" id="inssCodSub" name="inssCodSub"
+																value="">
+
+														</div>
+													</td>
+													<td>
+														<div class="row">
+															<div class="col-md-12">
+																<div
+																	style="display:flex; justify-content:flex-end; align-items: center;">
+																	<button type="button" class="btn btn-danger btn-sm"
+																		onclick="removerComAnimacao(this)">
+																		<i class="flaticon flaticon-trash icon-lg"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="afin-secao-footer">
+										<button type="button" class="btn btn-success btn-sm"
+											onclick="wdkAddChild('tblAjusteInssSub'), setSelectedZoomItem(undefined, 'inssCodigoAjusteSub');">
+											+ INSS
+										</button>
+									</div>
+								</div>
+
+								<!-- SECAO: DATA DE COMPETENCIA FISCAL -->
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-calendar"></i>
+										<span class="afin-secao-titulo">Data de Competência Fiscal</span>
+									</div>
+									<div class="afin-secao-body">
+										<div id="dataDeCompetenciaSubDiv">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group alteracao-competencia"
+														style="display: flex; flex-direction: column;">
+														<div class="input-group">
+															<input class="form-control" type="text"
+																id="dataDeCompetenciaSub" name="dataDeCompetenciaSub"
+																data-mask="00/00/0000" onfocus="pickerDate(this)"
+																readonly>
+															<div class="input-group-addon"><span
+																	class="fluigicon fluigicon-calendar"></span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="afin-secao-footer">
+										<button type="button" class="btn btn-success btn-sm"
+											onclick="ajusteCompetenciaSub()">
+											Ajustar Competência
+										</button>
+									</div>
+								</div>
+
+								<!-- SECAO: INFORMACOES DAS NOVAS NOTAS FISCAIS (TABELA PAI E FILHO) -->
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-file-text-o"></i>
+										<span class="afin-secao-titulo">Informações das Novas Notas Fiscais</span>
+									</div>
+									<div class="afin-secao-body">
+										<table id="tblnotascanceladasousub" tablename="tblnotascanceladasousub"
+											class="table table-condensed table-striped" noaddbutton="true">
+											<thead class="fs-display-none">
+												<tr>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="card-imposto">
+													<td>
+														<div class="row">
+															<div class="col-md-2">
+																<div class="form-group">
+																	<label for="numeroNotasSub">Número da
+																		nota</label>
+																	<input type="text" class="form-control"
+																		name="numeroNotasSub" id="numeroNotasSub">
+																</div>
+															</div>
+															<div class="col-md-3">
+																<div class="form-group">
+																	<label for="codigoVerificacaoSub">Código de
+																		verificação</label>
+																	<input type="text" class="form-control"
+																		name="codigoVerificacaoSub"
+																		id="codigoVerificacaoSub">
+																</div>
+															</div>
+															<div class="col-md-2">
+																<div class="form-group">
+																	<label for="dataEmissaoSub">Data de
+																		emissão</label>
+																	<input type="text" class="form-control"
+																		name="dataEmissaoSub" id="dataEmissaoSub">
+																</div>
+															</div>
+															<div class="col-md-2">
+																<div class="form-group">
+																	<label for="dataAutorizacaoSub">Data de
+																		autorização</label>
+																	<input type="text" class="form-control"
+																		name="dataAutorizacaoSub"
+																		id="dataAutorizacaoSub">
+																</div>
+															</div>
+															<div class="col-md-3">
+																<div class="form-group">
+																	<label for="numeroIdmov2201Sub">Idmov
+																		2.2.01</label>
+																	<input type="text" class="form-control"
+																		name="numeroIdmov2201Sub"
+																		id="numeroIdmov2201Sub" readonly>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-8 col-md-offset-2">
+																<div class="form-group">
+
+																	<label>NFSE</label>
+
+																	<div class="input-group componentAnexo">
+
+																		<input type="hidden" name="notaFiscalSub"
+																			class="descAnexo" value="notaFiscalSub" />
+
+																		<input type="text" id="fnnotaFiscalSub"
+																			name="fnnotaFiscalSub"
+																			class="form-control inputAnexo"
+																			placeholder="Anexe a nota fiscal"
+																			readonly />
+
+																		<span class="input-group-btn">
+																			<button type="button"
+																				class="btnUpFile btn btn-success"
+																				data-acao="upload"
+																				onclick="anexo(event)">
+																				<i
+																					class="flaticon flaticon-paperclip"></i>
+																				Anexar
+																			</button>
+
+																			<button type="button"
+																				class="btnViewerFile btn btn-info"
+																				data-acao="viewer"
+																				style="display:none;">
+																				Visualizar
+																			</button>
+
+																			<button type="button"
+																				class="btnDownloadFile btn btn-info"
+																				data-acao="download"
+																				style="display:none;">
+																				Download
+																			</button>
+
+																		</span>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12"
+																style="display:flex; justify-content:flex-end;">
+																<button type="button" class="btn btn-danger btn-sm"
+																	onclick="removerComAnimacao(this)">
+																	<i class="flaticon flaticon-trash icon-lg"></i>
+																</button>
+															</div>
+														</div>
+
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="afin-secao-footer">
+										<button type="button" class="btn btn-success btn-sm"
+											onclick="wdkAddChild('tblnotascanceladasousub')">
+											+ NFSE
+										</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div id="historicoMovimentosPanel">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<img src="Images/wired-flat-400-bookmark-hover-flutter.gif"
+									style="width:60px;height:60px" alt="historico movimento" />
+								<h2 class="panel-title">Histórico dos Movimentos</h2>
+							</div>
+							<div class="panel-body">
+
+								<div class="afin-secao">
+									<div class="afin-secao-header">
+										<i class="fa fa-history"></i>
+										<span class="afin-secao-titulo">Situação dos Movimentos (2.1.01 / 2.1.02 /
+											2.2.01)</span>
+									</div>
+									<div class="afin-secao-body">
+
+										<div class="historico-legenda">
+											<span class="historico-legenda-item">
+												<span class="historico-legenda-cor historico-legenda-a-faturar"></span>
+												A faturar
+											</span>
+											<span class="historico-legenda-item">
+												<span class="historico-legenda-cor historico-legenda-faturado"></span>
+												Faturado
+											</span>
+											<span class="historico-legenda-item">
+												<span class="historico-legenda-cor historico-legenda-cancelado"></span>
+												Cancelado
+											</span>
+										</div>
+
+										<table id="tblHistoricoMovimentos" class="table table-condensed table-striped">
+											<thead>
+												<tr>
+													<th>Tipo do Movimento</th>
+													<th>Número</th>
+													<th>Status</th>
+												</tr>
+											</thead>
+											<tbody id="tblHistoricoMovimentosBody">
+											</tbody>
+										</table>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="botChecagemInfo">
+					<img id="iconeChecagem" src="https://i.imgur.com/kFNXFlP.png">
+					<div id="cabecalhoBot">
+						<h3>Pendências do processo</h3>
+						<span id="fecharChecagem" onclick="exibitInfo()">O</span>
+					</div>
+					<div id="inforChecagem">
+					</div>
+				</div>
+
+
+			</div>
+	</div>
+	</form>
+	</div>
+
+	<div id="carregamentoG12">
+		<span>G12</span>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>${subject}</title>
+</head>
+
+<body
+    style="margin:0;padding:0;background-color:#eef2f7;font-family:Arial,sans-serif;color:#333333;">
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0"
+        style="background-color:#eef2f7;padding:30px 15px;">
+
+        <tr>
+            <td align="center">
+
+                <table width="760" border="0" cellpadding="0" cellspacing="0"
+                    style="background-color:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.08);">
+
+                    <!-- HEADER -->
+                    <tr>
+                        <td
+                            style="background:linear-gradient(135deg,#0d3b82 0%,#124da5 100%);padding:35px 40px;border-bottom:5px solid #ff0000;">
+
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                <tr>
+
+                                    <td align="left">
+
+                                        <div
+                                            style="font-size:30px;font-weight:bold;color:#ffffff;letter-spacing:1px;">
+                                            G12
+                                        </div>
+
+                                        <div
+                                            style="font-size:14px;color:#dbe7ff;margin-top:8px;line-height:1.6;">
+                                            Setor de Projetos & Tecnologia
+                                        </div>
+
+                                    </td>
+
+                                    <td align="right">
+
+                                        <div
+                                            style="display:inline-block;background:#ff0000;color:#ffffff;padding:10px 18px;border-radius:30px;font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:0.5px;">
+                                            Comunicação Oficial
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- TITULO -->
+                    <tr>
+                        <td style="padding:35px 40px 15px 40px;">
+
+                            <div
+                                style="font-size:26px;font-weight:bold;color:#0d3b82;line-height:1.4;margin-bottom:10px;">
+                                ${subject}
+                            </div>
+
+                            <div
+                                style="height:4px;width:80px;background:#ff0000;border-radius:10px;">
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <!-- CORPO -->
+                    <tr>
+                        <td style="padding:20px 40px 40px 40px;">
+
+                            <div
+                                style="font-size:14px;line-height:1.8;color:#4a4a4a;">
+
+                                ${corpoEmail!''}
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <!-- BLOCO INFORMATIVO -->
+                    <tr>
+                        <td style="padding:0 40px 35px 40px;">
+
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                style="background:#f8fbff;border:1px solid #d9e6ff;border-left:5px solid #0d3b82;border-radius:10px;">
+
+                                <tr>
+
+                                    <td style="padding:22px;">
+
+                                        <div
+                                            style="font-size:15px;font-weight:bold;color:#0d3b82;margin-bottom:10px;">
+                                            Aviso
+                                        </div>
+
+                                        <div
+                                            style="font-size:13px;line-height:1.7;color:#555555;">
+                                            Esta mensagem foi enviada automaticamente pelo sistema do Fluig.
+                                            Caso tenha dúvidas ou necessite de suporte, entre em contato com
+                                            o setor responsável através dos canais abaixo.
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER -->
+                    <tr>
+                        <td
+                            style="background:#0d3b82;padding:35px 40px;color:#ffffff;">
+
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                <tr>
+
+                                    <td width="50%" valign="top">
+
+                                        <div
+                                            style="font-size:18px;font-weight:bold;margin-bottom:15px;">
+                                            Contato
+                                        </div>
+
+                                        <div
+                                            style="font-size:13px;line-height:2;color:#dbe7ff;">
+
+                                            📞 (84) 98106-2525<br>
+                                            ✉️ projetos@engpac.com.br
+
+                                        </div>
+
+                                    </td>
+
+                                    <td width="50%" valign="top" align="right">
+
+                                        <div
+                                            style="font-size:18px;font-weight:bold;margin-bottom:15px;">
+                                            Horário de Atendimento
+                                        </div>
+
+                                        <div
+                                            style="font-size:13px;line-height:2;color:#dbe7ff;">
+
+                                            Segunda à Sexta<br>
+                                            08:00 às 18:00
+
+                                        </div>
+
+                                        <div
+                                            style="margin-top:25px;display:inline-block;background:#ff0000;padding:10px 20px;border-radius:30px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;color:#ffffff;">
+
+                                            Construindo o futuro juntos
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- RODAPE FINAL -->
+                    <tr>
+                        <td
+                            style="background:#082957;padding:18px 30px;text-align:center;">
+
+                            <div
+                                style="font-size:11px;color:#b8ccf5;line-height:1.6;">
+
+                                © ${.now?string["yyyy"]} G12 - Todos os direitos reservados.<br>
+                                Este e-mail pode conter informações confidenciais destinadas exclusivamente ao destinatário.
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

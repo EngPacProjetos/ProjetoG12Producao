@@ -1,0 +1,5973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_202" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>volume</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 1276366</string>
+   <array class="java.lang.String" length="169">
+    <void index="0">
+     <string>ajusteContratos</string>
+    </void>
+    <void index="1">
+     <string>ajusteContratosValidacao</string>
+    </void>
+    <void index="2">
+     <string>ajusteInssZoom</string>
+    </void>
+    <void index="3">
+     <string>ajusteIrrfZoom</string>
+    </void>
+    <void index="4">
+     <string>ajusteSetorTecnico</string>
+    </void>
+    <void index="5">
+     <string>ajusteSetorTecnicoPosNota</string>
+    </void>
+    <void index="6">
+     <string>ajusteTransmissao</string>
+    </void>
+    <void index="7">
+     <string>ajusteTransmissaoRecebimento</string>
+    </void>
+    <void index="8">
+     <string>aliquota</string>
+    </void>
+    <void index="9">
+     <string>aliquotaInssCadastro</string>
+    </void>
+    <void index="10">
+     <string>aliquotaIrrfCadastro</string>
+    </void>
+    <void index="11">
+     <string>aliquotaMunicipal</string>
+    </void>
+    <void index="12">
+     <string>aliquotaMunicipalSub</string>
+    </void>
+    <void index="13">
+     <string>aliquotaSub</string>
+    </void>
+    <void index="14">
+     <string>aplicavelA</string>
+    </void>
+    <void index="15">
+     <string>art</string>
+    </void>
+    <void index="16">
+     <string>atividade</string>
+    </void>
+    <void index="17">
+     <string>bairroPrestador</string>
+    </void>
+    <void index="18">
+     <string>bairroTomador</string>
+    </void>
+    <void index="19">
+     <string>bairro_projeto</string>
+    </void>
+    <void index="20">
+     <string>baseCalculo</string>
+    </void>
+    <void index="21">
+     <string>baseCalculoSub</string>
+    </void>
+    <void index="22">
+     <string>baseReucaoMunicipal</string>
+    </void>
+    <void index="23">
+     <string>baseReucaoMunicipalSub</string>
+    </void>
+    <void index="24">
+     <string>centro_de_custo</string>
+    </void>
+    <void index="25">
+     <string>cepPrestador</string>
+    </void>
+    <void index="26">
+     <string>cepTomador</string>
+    </void>
+    <void index="27">
+     <string>cidadePrestador</string>
+    </void>
+    <void index="28">
+     <string>cidadeTomador</string>
+    </void>
+    <void index="29">
+     <string>cidade_projeto</string>
+    </void>
+    <void index="30">
+     <string>cno</string>
+    </void>
+    <void index="31">
+     <string>CNOPB</string>
+    </void>
+    <void index="32">
+     <string>cnpj</string>
+    </void>
+    <void index="33">
+     <string>cnpjCliente</string>
+    </void>
+    <void index="34">
+     <string>CodColigada</string>
+    </void>
+    <void index="35">
+     <string>codigoInssCadastro</string>
+    </void>
+    <void index="36">
+     <string>codigoIrrfCadastro</string>
+    </void>
+    <void index="37">
+     <string>codigoMunicipio</string>
+    </void>
+    <void index="38">
+     <string>codigoVerificacao</string>
+    </void>
+    <void index="39">
+     <string>codigoVerificacaoSub</string>
+    </void>
+    <void index="40">
+     <string>codigo_cliente</string>
+    </void>
+    <void index="41">
+     <string>codigo_do_projeto</string>
+    </void>
+    <void index="42">
+     <string>codigo_produto</string>
+    </void>
+    <void index="43">
+     <string>codMuniIbs</string>
+    </void>
+    <void index="44">
+     <string>codOficialIrrfCadastro</string>
+    </void>
+    <void index="45">
+     <string>codUfIbs</string>
+    </void>
+    <void index="46">
+     <string>coligada</string>
+    </void>
+    <void index="47">
+     <string>coligadaCliente</string>
+    </void>
+    <void index="48">
+     <string>CompetenciaAlterada</string>
+    </void>
+    <void index="49">
+     <string>complemento_projeto</string>
+    </void>
+    <void index="50">
+     <string>condicao_pagamento</string>
+    </void>
+    <void index="51">
+     <string>controleDeFluxo</string>
+    </void>
+    <void index="52">
+     <string>dataAutorizacao</string>
+    </void>
+    <void index="53">
+     <string>dataAutorizacaoSub</string>
+    </void>
+    <void index="54">
+     <string>dataDeCompetencia</string>
+    </void>
+    <void index="55">
+     <string>dataDeCompetenciaSub</string>
+    </void>
+    <void index="56">
+     <string>dataEmissao</string>
+    </void>
+    <void index="57">
+     <string>dataEmissaoSub</string>
+    </void>
+    <void index="58">
+     <string>data_contrato</string>
+    </void>
+    <void index="59">
+     <string>data_inicio_contrato</string>
+    </void>
+    <void index="60">
+     <string>data_termino</string>
+    </void>
+    <void index="61">
+     <string>descricaoInssCadastro</string>
+    </void>
+    <void index="62">
+     <string>descricaoIrrfCadastro</string>
+    </void>
+    <void index="63">
+     <string>descricao_projeto</string>
+    </void>
+    <void index="64">
+     <string>emailPrestador</string>
+    </void>
+    <void index="65">
+     <string>emailTomador</string>
+    </void>
+    <void index="66">
+     <string>enderecoPrestador</string>
+    </void>
+    <void index="67">
+     <string>enderecoTomador</string>
+    </void>
+    <void index="68">
+     <string>errorAoAutorizarNotas</string>
+    </void>
+    <void index="69">
+     <string>errorAoEnviarNotas</string>
+    </void>
+    <void index="70">
+     <string>estadoPrestador</string>
+    </void>
+    <void index="71">
+     <string>estado_projeto</string>
+    </void>
+    <void index="72">
+     <string>exercicioFiscal</string>
+    </void>
+    <void index="73">
+     <string>exibirCheck</string>
+    </void>
+    <void index="74">
+     <string>filial</string>
+    </void>
+    <void index="75">
+     <string>fiscalMedicao</string>
+    </void>
+    <void index="76">
+     <string>fnnotaFiscal</string>
+    </void>
+    <void index="77">
+     <string>fnnotaFiscalSub</string>
+    </void>
+    <void index="78">
+     <string>gedInfo</string>
+    </void>
+    <void index="79">
+     <string>historico2102</string>
+    </void>
+    <void index="80">
+     <string>historico2201</string>
+    </void>
+    <void index="81">
+     <string>historicoMovimento</string>
+    </void>
+    <void index="82">
+     <string>historicoNumMov2102</string>
+    </void>
+    <void index="83">
+     <string>historicoNumMov2201</string>
+    </void>
+    <void index="84">
+     <string>idContrato</string>
+    </void>
+    <void index="85">
+     <string>IdMov</string>
+    </void>
+    <void index="86">
+     <string>idmov2</string>
+    </void>
+    <void index="87">
+     <string>IDMOV_numero</string>
+    </void>
+    <void index="88">
+     <string>IDPRD</string>
+    </void>
+    <void index="89">
+     <string>idprj</string>
+    </void>
+    <void index="90">
+     <string>impostos_selecao</string>
+    </void>
+    <void index="91">
+     <string>impostos_selecao_municipal</string>
+    </void>
+    <void index="92">
+     <string>impostos_selecao_municipal_sub</string>
+    </void>
+    <void index="93">
+     <string>impostos_selecao_subs</string>
+    </void>
+    <void index="94">
+     <string>incricaoPrestador</string>
+    </void>
+    <void index="95">
+     <string>incricaoTomador</string>
+    </void>
+    <void index="96">
+     <string>indexInssCadastro</string>
+    </void>
+    <void index="97">
+     <string>indexIrrCadastro</string>
+    </void>
+    <void index="98">
+     <string>informacoesComplementaresNota</string>
+    </void>
+    <void index="99">
+     <string>infoSetorAjuste</string>
+    </void>
+    <void index="100">
+     <string>infoSetorAjusteRecebimento</string>
+    </void>
+    <void index="101">
+     <string>infoTransmOK</string>
+    </void>
+    <void index="102">
+     <string>infoTransmOKRecebimento</string>
+    </void>
+    <void index="103">
+     <string>inscricaoMunicipalPrestador</string>
+    </void>
+    <void index="104">
+     <string>inssAliquota</string>
+    </void>
+    <void index="105">
+     <string>inssCodigoAjuste</string>
+    </void>
+    <void index="106">
+     <string>inssCodigoAjusteSub</string>
+    </void>
+    <void index="107">
+     <string>inssCodSub</string>
+    </void>
+    <void index="108">
+     <string>inssDescricao</string>
+    </void>
+    <void index="109">
+     <string>inssDescricaoAjuste</string>
+    </void>
+    <void index="110">
+     <string>inssDoItem</string>
+    </void>
+    <void index="111">
+     <string>irrfAliquota</string>
+    </void>
+    <void index="112">
+     <string>irrfCodigoAjuste</string>
+    </void>
+    <void index="113">
+     <string>irrfCodigoAjusteSub</string>
+    </void>
+    <void index="114">
+     <string>irrfCodSub</string>
+    </void>
+    <void index="115">
+     <string>irrfDescricao</string>
+    </void>
+    <void index="116">
+     <string>irrfDescricaoAjuste</string>
+    </void>
+    <void index="117">
+     <string>irrfDoItem</string>
+    </void>
+    <void index="118">
+     <string>irrfTipoDePessoa</string>
+    </void>
+    <void index="119">
+     <string>motivoReemissao</string>
+    </void>
+    <void index="120">
+     <string>motivoReemissaoRecebimento</string>
+    </void>
+    <void index="121">
+     <string>municipioPrestador</string>
+    </void>
+    <void index="122">
+     <string>municipioTomador</string>
+    </void>
+    <void index="123">
+     <string>naturezaOrcamentaria</string>
+    </void>
+    <void index="124">
+     <string>nomeEmpresarial</string>
+    </void>
+    <void index="125">
+     <string>nomeEmpresarialPrestador</string>
+    </void>
+    <void index="126">
+     <string>nomePrestador</string>
+    </void>
+    <void index="127">
+     <string>nome_centro_de_custo</string>
+    </void>
+    <void index="128">
+     <string>nome_cliente</string>
+    </void>
+    <void index="129">
+     <string>nome_filial</string>
+    </void>
+    <void index="130">
+     <string>nome_produto</string>
+    </void>
+    <void index="131">
+     <string>notaFiscal</string>
+    </void>
+    <void index="132">
+     <string>notaFiscalSub</string>
+    </void>
+    <void index="133">
+     <string>numeroIdmov2201</string>
+    </void>
+    <void index="134">
+     <string>numeroIdmov2201Sub</string>
+    </void>
+    <void index="135">
+     <string>NumeroMov</string>
+    </void>
+    <void index="136">
+     <string>numeroNotas</string>
+    </void>
+    <void index="137">
+     <string>numeroNotasSub</string>
+    </void>
+    <void index="138">
+     <string>numeroPrestador</string>
+    </void>
+    <void index="139">
+     <string>numeroTomador</string>
+    </void>
+    <void index="140">
+     <string>numero_contrato</string>
+    </void>
+    <void index="141">
+     <string>numero_endereco_projeto</string>
+    </void>
+    <void index="142">
+     <string>numero_licitacao</string>
+    </void>
+    <void index="143">
+     <string>periodicidade_medicao</string>
+    </void>
+    <void index="144">
+     <string>periodoMedicao</string>
+    </void>
+    <void index="145">
+     <string>qtdeCancelamentos</string>
+    </void>
+    <void index="146">
+     <string>quantidadeItem</string>
+    </void>
+    <void index="147">
+     <string>quantidade_produto</string>
+    </void>
+    <void index="148">
+     <string>reducaoInssCadastro</string>
+    </void>
+    <void index="149">
+     <string>revisaoProjeto</string>
+    </void>
+    <void index="150">
+     <string>ruaPrestador</string>
+    </void>
+    <void index="151">
+     <string>ruaTomador</string>
+    </void>
+    <void index="152">
+     <string>rua_projeto</string>
+    </void>
+    <void index="153">
+     <string>statusAutorizacao</string>
+    </void>
+    <void index="154">
+     <string>statusEnvio</string>
+    </void>
+    <void index="155">
+     <string>telefonePrestador</string>
+    </void>
+    <void index="156">
+     <string>telefoneTomador</string>
+    </void>
+    <void index="157">
+     <string>tipo_contrato</string>
+    </void>
+    <void index="158">
+     <string>tributosMunicipais</string>
+    </void>
+    <void index="159">
+     <string>tributosNacionais</string>
+    </void>
+    <void index="160">
+     <string>unidadeItem</string>
+    </void>
+    <void index="161">
+     <string>unidade_produto</string>
+    </void>
+    <void index="162">
+     <string>valorAcimaDe1</string>
+    </void>
+    <void index="163">
+     <string>valorAlterado</string>
+    </void>
+    <void index="164">
+     <string>valorBrutoOriginal</string>
+    </void>
+    <void index="165">
+     <string>valorImposto</string>
+    </void>
+    <void index="166">
+     <string>valorImpostoSub</string>
+    </void>
+    <void index="167">
+     <string>valorLiquidoOriginal</string>
+    </void>
+    <void index="168">
+     <string>valor_item</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>mecanismoGrupo</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Usuários RM</string>
+      </void>
+      <void property="groupId">
+       <string>RM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras DF/GO</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras RN/PB/PE</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasNordeste</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras RS</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica DF</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica RS</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica NATAL</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaNATAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica JP</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaJP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica CG</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaCG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica GO</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Macaiba</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaMacaiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Mossoro</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaMossoro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado CG</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoCG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado DF</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado GO</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Itamaraty</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoItamaraty</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado JP</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoJP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Macaiba</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoMacaiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Mossoro</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoMossoro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Natal</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoNatal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado RS</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Sedes</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoSedes</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado SES</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoSES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia Natal</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_Natal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia Mossoró</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_Mossoro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia Macaíba</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_Macaiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia DF</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_DF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia GO</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_GO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia RS</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_RS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia JP</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_JP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia CG</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_CG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia PDF</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_PDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia NovaCruz</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_NovaCruz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Engenharia PE</string>
+      </void>
+      <void property="groupId">
+       <string>Engenharia_PE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM BSB</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_BSB</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM CG</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_CG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM JP</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_JP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM RN</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_RN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM RS</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_RS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM GO</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_GO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Financeiro EngPac</string>
+      </void>
+      <void property="groupId">
+       <string>FinanceiroEngpac</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Financeiro Gennesis</string>
+      </void>
+      <void property="groupId">
+       <string>FinanceiroGennesis</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIDADA 2 FILIAL 1</string>
+      </void>
+      <void property="groupId">
+       <string>ENGPAC_1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIDADA 2 FILIAL 2</string>
+      </void>
+      <void property="groupId">
+       <string>ENGPAC_2</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIDADA 1 FILIAL 1</string>
+      </void>
+      <void property="groupId">
+       <string>GENNESIS_1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 1 FILIAL 2</string>
+      </void>
+      <void property="groupId">
+       <string>GENNESIS_2</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 1 FILIAL 3</string>
+      </void>
+      <void property="groupId">
+       <string>GENNESIS_3</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 1 FILIAL 4</string>
+      </void>
+      <void property="groupId">
+       <string>GENNESIS_4</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 1 FILIAL 5</string>
+      </void>
+      <void property="groupId">
+       <string>GENNESIS_5</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 3 FILIAL 1</string>
+      </void>
+      <void property="groupId">
+       <string>ECONTECX_1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 2 FILIAL 3</string>
+      </void>
+      <void property="groupId">
+       <string>ENGPAC_3</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>00-FLUIG-GESTORES</string>
+      </void>
+      <void property="groupId">
+       <string>00-FLUIG-GESTORES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Pau dos Ferros</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoPauDosFerros</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Nova Cruz</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoNovaCruz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras Goiás</string>
+      </void>
+      <void property="groupId">
+       <string>Compras_GO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>REFERENTE A COLIGADA 2 E FILIAL 4</string>
+      </void>
+      <void property="groupId">
+       <string>ENGPAC_4</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras MG</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado MG</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica MG</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM_MG</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Financeiro Econtecx</string>
+      </void>
+      <void property="groupId">
+       <string>FinanceiroEcontecx</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>AlmoxarifadoSuplan</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoSuplan</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM_SUPLAN</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_SUPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>LogisticaSUPLAN</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaSUPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Veranopolis</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaVeranopolis</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Pelotas</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaPelotas</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Veranopolis</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoVeranopolis</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Pelotas</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoPelotas</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo de acesso ao fluxo G4</string>
+      </void>
+      <void property="groupId">
+       <string>GestoresG4</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Aprovações G1,G2 e G3</string>
+      </void>
+      <void property="groupId">
+       <string>Aprovacoes</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Atendentes para solicitações FLUIG Processo 00-FLUIG</string>
+      </void>
+      <void property="groupId">
+       <string>00-FLUIG-ATENDENTE_TI</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>AlmoxarifadoMacaibaEcontecx</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoMacaibaEcontecx</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ComprasFluig</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasFluig</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5-FINANCEIRO-ENGPAC-ERRO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRO-ENGPAC-ERRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5-FINANCEIRO-GENNESIS-ERRO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRO-GENNESIS-ERRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5-FINANCEIRO-ECONTECX-ERRO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRO-ECONTECX-ERRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras Paraná</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasPR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ENGPAC - CADASTRO FORNECEDOR</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROENGPAC-CADASTROFORNECEDOR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ECONTECX - CADASTRO FORNECEDOR</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROECONTECX-CADASTROFORNECEDOR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO GENNESIS - CADASTRO FORNECEDOR</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROGENNESIS-CADASTROFORNECEDOR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ENGPAC - PROVISIONAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROENGPAC-PROVISIONAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ECONTECX - PROVISIONAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROECONTECX-PROVISIONAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO GENNESIS - PROVISIONAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROGENNESIS-PROVISIONAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Usuários com papel de gestão no processo G5-Pagamentos Avulsos</string>
+      </void>
+      <void property="groupId">
+       <string>G5-GESTORES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Maringá</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoMaringa</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Londrina</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoLondrina</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Campo Mourao</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoCampoMourao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Maringá</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaMaringa</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADMINISTRAÇÃO MARINGA</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_MARINGA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADMINISTRAÇÃO LONDRINA</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_LONDRINA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logística Campo Mourao</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaCampoMourao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logística Londrina</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaLondrina</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Aprovadores para os processos G5 sem cadastros de atrivbuição</string>
+      </void>
+      <void property="groupId">
+       <string>G5-APROVAR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ENGPAC - AGUARDANDO VENCIMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROENGPAC-AGUARDANDOVENCIMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ENGPAC - PROVISIONADO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROENGPAC-PROVISIONADO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ENGPAC - PAGAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROENGPAC-PAGAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO GENNESIS - AGUARDANDO VENCIMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROGENNESIS-AGUARDANDOVENCIMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ECONTECX - AGUARDANDO VENCIMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROECONTECX-AGUARDANDOVENCIMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO GENNESIS - PROVISIONADO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROGENNESIS-PROVISIONADO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ECONTECX - PROVISIONADO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROECONTECX-PROVISIONADO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO GENNESIS - PAGAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROGENNESIS-PAGAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO ECONTECX - PAGAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIROECONTECX-PAGAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo Para receber Fluigg&apos;s sem parametrização</string>
+      </void>
+      <void property="groupId">
+       <string>TratamentoDeErros</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logística Macaíba Econtex</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaMacaibaEcontex</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Pato Branco</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoPatoBranco</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Foz Do Iguaçu</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoFoz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Toledo</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoToledo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Pato Branco</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaPatoBranco</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Foz</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaFoz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Toledo</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaToledo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Porto Alegre</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaPortoAlegre</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Natal</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoNatal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Mossoro</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoMossoro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Macaiba</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoMacaiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado GO</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado DF</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifa do CG</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoCG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Parana</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoParana</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Sedes</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoSedes</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Suplan</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoSuplan</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado MG</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Pelotas</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoPelotas</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Veranopolis</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoVeranopolis</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Itamaraty</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoItamaraty</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Nova Cruz</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoNovaCruz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado RS</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado JP</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoJP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Pau Dos Ferros</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoPauDosFerros</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado SES</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoSES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica Natal</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaNatal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica RS</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica DF</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica JP</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaJP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica Veranopolis</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaVeranopolis</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica Pelotas</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaPelotas</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica Suplan</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaSuplan</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica MG</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica Mossoro</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaMossoro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica CG</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaCG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica GO</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Logistica Macaiba</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LogisticaMacaiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG.NATAL - MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NATAL-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NATAL-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NATAL-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NATAL-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NATAL-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NATAL- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NATAL-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MOSSORO-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MOSSORO-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MOSSORO-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MOSSORO-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MOSSORO-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MOSSORO-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.GO- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.GO-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MOSSORO- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MOSSORO-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.GO-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.GO-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBA-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBA-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBA-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBA-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBA-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBA-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBA- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBA-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.GO-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.GO-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.GO-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.GO-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CG-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CG-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PATOBRANCO- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PATOBRANCO-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PATOBRANCO-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PATOBRANCO-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PATOBRANCO-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PATOBRANCO-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PATOBRANCO-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PATOBRANCO-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.LONDRINA- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.LONDRINA-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.TOLEDO- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.TOLEDO-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.TOLEDO-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.TOLEDO-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.TOLEDO-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.TOLEDO-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.TOLEDO-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.TOLEDO-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.FOZ- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.FOZ-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.FOZ-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.FOZ-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.FOZ-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.FOZ-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.FOZ-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.FOZ-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CG-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CG-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CG-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CG-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CG- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CG-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MARINGA-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MARINGA-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MARINGA-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MARINGA-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MARINGA-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MARINGA-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MARINGA- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MARINGA-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.SUPLAN-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SUPLAN-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.SUPLAN-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SUPLAN-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.SUPLAN-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SUPLAN-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.SUPLAN- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SUPLAN-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.BH-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.BH-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.BH-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.BH-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.BH-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.BH-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.BH- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.BH-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PELOTAS-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PELOTAS-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PELOTAS-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PELOTAS-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PELOTAS-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PELOTAS-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PELOTAS- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PELOTAS-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.VERANOPOLIS-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.VERANOPOLIS-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.VERANOPOLIS-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.VERANOPOLIS-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.VERANOPOLIS-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.VERANOPOLIS-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.VERANOPOLIS- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.VERANOPOLIS-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NOVACRUZ-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NOVACRUZ-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NOVACRUZ-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NOVACRUZ-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NOVACRUZ-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NOVACRUZ-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.NOVACRUZ- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.NOVACRUZ-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.POA-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.POA-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.POA-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.POA-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.POA-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.POA-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.POA- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.POA-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PAUDOSFERROS-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PAUDOSFERROS-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PAUDOSFERROS-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PAUDOSFERROS-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PAUDOSFERROS-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PAUDOSFERROS-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.PAUDOSFERROS- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.PAUDOSFERROS-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.JP-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.JP-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.JP-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.JP-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.JP-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.JP-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.JP- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.JP-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CAMPOMOURAO-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CAMPOMOURAO-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CAMPOMOURAO-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CAMPOMOURAO-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CAMPOMOURAO-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CAMPOMOURAO-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.CAMPOMOURAO- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.CAMPOMOURAO-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.LONDRINA-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.LONDRINA-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.LONDRINA-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.LONDRINA-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.LONDRINA-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.LONDRINA-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.DF-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.DF-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.DF-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.DF-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.DF-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.DF-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.DF- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.DF-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBAECONTECX-MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBAECONTECX-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBAECONTECX-EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBAECONTECX-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBAECONTECX-ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBAECONTECX-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG.MACAIBAECONTECX- MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.MACAIBAECONTECX-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Londrina</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoLondrina</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Campo Mourao</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoCampoMourao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Maringa</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoMaringa</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-AlmoxarifadoToledo</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoToledo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Pato Branco</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoPatoBranco</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Foz Do Iguacu</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoFozDoIguacu</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Financeiro Dehuel</string>
+      </void>
+      <void property="groupId">
+       <string>FinanceiroDehuel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Financeiro Dorneles</string>
+      </void>
+      <void property="groupId">
+       <string>FinanceiroDorneles</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADMINISTRAÇÃO CAMPO MOURÃO</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_CP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DEHUEL - PROVISIONAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODEHUEL-PROVISIONAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DEHUEL - PROVISIONADO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODEHUEL-PROVISIONADO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DEHUEL - CADASTRO FORNECEDOR</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODEHUEL-CADASTROFORNECEDOR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DEHUEL - AGUARDANDO VENCIMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODEHUEL-AGUARDANDOVENCIMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DEHUEL - PAGAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODEHUEL-PAGAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DORNELES - PROVISIONAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODORNELES-PROVISIONAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DORNELES - PROVISIONADO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODORNELES-PROVISIONADO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DORNELES - CADASTRO FORNECEDOR</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODORNELES-CADASTROFORNECEDOR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DORNELES - AGUARDANDO VENCIMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODORNELES-AGUARDANDOVENCIMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO DORNELES - PAGAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRODORNELES-PAGAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM_PE</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_PE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica PE</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado PE</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 NOVAS SOLICITAÇÕES CONTRATOS</string>
+      </void>
+      <void property="groupId">
+       <string>G8-NOVASSOLICITACOES-CONTRATOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 ANALISE CONTRATOS SEECT PB</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ANALISECONTRATOS-SEECTPB</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 ANALISE CONTRATOS DF/GO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ANALISECONTRATOS-DFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 ANALISE CONTRATOS GERAL</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ANALISECONTRATOS-GERAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - AJUSTE CONTRATOS</string>
+      </void>
+      <void property="groupId">
+       <string>G8-AJUSTECONTRATOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - NF EMITIDA - CONTRATOS</string>
+      </void>
+      <void property="groupId">
+       <string>G8-NFEMITIDA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - ENGPAC - NOVAS SOLICITAÇÕES - FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ENGPAC-NOVASSOLICITACOES-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - GENNESIS - NOVAS SOLICITAÇÕES - FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-GENNESIS-NOVASSOLICITACOES-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - ECONTECX - NOVAS SOLICITAÇÕES - FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ECONTECX-NOVASSOLICITACOES-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - ENGPAC - NFEMITIDA - FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ENGPAC-NFEMITIDA-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - GENNESIS - NF EMITIDA - FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-GENNESIS-NFEMITIDA-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - ECONTECX - NFEMITIDA - FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ECONTECX-NFEMITIDA-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - AJUSTE FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-AJUSTEFINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - NOVAS SOLICITAÇÕES - CONTABILIDADE</string>
+      </void>
+      <void property="groupId">
+       <string>G8-NOVASSOLICITACOES-CONTABILIDADE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - ENGPAC - NF EM EMISSÃO - CONTABILIDADE</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ENGPAC-NFEMEMISSAO-CONTABILIDADE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - GENNESIS - NF EMEMISSÃO - CONTABILIDADE</string>
+      </void>
+      <void property="groupId">
+       <string>G8-GENNESIS-NFEMEMISSAO-CONTABILIDADE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - ECONTECX - NF EMEMISSÃO - CONTABILIDADE</string>
+      </void>
+      <void property="groupId">
+       <string>G8-ECONTECX-NFEMEMISSAO-CONTABILIDADE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G9 - NOVAS SOLICITAÇÕES USUÁRIOS</string>
+      </void>
+      <void property="groupId">
+       <string>G9-NOVASSOLICITACOESUSUARIOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G9 - FAZENDO CADASTRO USUARIOS</string>
+      </void>
+      <void property="groupId">
+       <string>G9-FAZENDOCADASTROUSUARIOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G9 - NOVAS SOLICITAÇÕES PRODUTOS</string>
+      </void>
+      <void property="groupId">
+       <string>G9-NOVASSOLICITACOESPRODUTOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G9 - FAZENDO CADASTROS PRODUTOS</string>
+      </void>
+      <void property="groupId">
+       <string>G9-FAZENDOCADASTROSPRODUTOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-AlmoxarifadoPE</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG-PE-MONTAGEMDEROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-PE-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG-PE-EMROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-PE-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG-PE-ENTREGAPARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-PE-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-LOG-PE-MATERIALPENDENTEEMOBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-PE-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>GESTORES G6</string>
+      </void>
+      <void property="groupId">
+       <string>GESTORESG6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - ALMOXARIFADO MACAIBA ECONTECX</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoMacaibaEcontecx</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADMINISTRAÇÃO PATO BRANCO</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_PATO_BRANCO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - NOVAS SOLICITACOES CONTRATOS DF-GO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-NOVASSOLICITACOES-CONTRATOSDFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - AJUSTE CONTRATOS DF GO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-AJUSTECONTRATOSDFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8 - NF EMITIDA-CONTRATO DF-GO</string>
+      </void>
+      <void property="groupId">
+       <string>G8-NFEMITIDASDFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3_MapaDeCotacao</string>
+      </void>
+      <void property="groupId">
+       <string>G3_MapaDeCotacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3 - MG - MAPA COTAÇÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G3Mapa_COMPRASMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3 - RS - MAPA COTAÇÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G3Mapa_COMPRASRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3 - NORDESTE - MAPA COTAÇÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G3Mapa_COMPRASNORDESTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3 - PR - MAPA COTAÇÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G3Mapa_COMPRASPR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>RelatorioG6 - Visualizadores</string>
+      </void>
+      <void property="groupId">
+       <string>RelatorioG6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G8-GESTORES</string>
+      </void>
+      <void property="groupId">
+       <string>G8-GESTORES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Visualização dos formulário do G3</string>
+      </void>
+      <void property="groupId">
+       <string>Relatorio - G3</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento Natal</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoNatal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento Mossoro</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoMossoro</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento Macaiba</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoMacaiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento GO</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO MACAIBA ECONTECX</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOMACAIBAECONTECX</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO DF</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO PE</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento CG</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoCG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento Paraná</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoParana</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO FOZ DO IGUAÇU</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOFOZDOIGUACU</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento Sedes</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoSedes</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO TOLEDO</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOTOLEDO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6- RESSUPRIMENTO SUPLAN</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoSuplan</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO MARINGA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOMARINGA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO CAMPO MOURÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOCAMPOMOURAO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Ressuprimento MG</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO LONDRINA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOLONDRINA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTOS PELOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoPelotas</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO SES</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOSES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO VERANOPOLIS</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoVeranopolis</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO NOVA CRUZ</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoNovaCruz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO RS</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO JP</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoJP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO PDF</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTOPDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO ITAMARATY</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoItamaraty</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO PATO BRANCO</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoPatoBranco</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>RecotacaoDF</string>
+      </void>
+      <void property="groupId">
+       <string>RecotacaoDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>RecotacaoNordeste</string>
+      </void>
+      <void property="groupId">
+       <string>RecotacaoNordeste</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>RecotacaoRS</string>
+      </void>
+      <void property="groupId">
+       <string>RecotacaoRS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Recotacao_GO</string>
+      </void>
+      <void property="groupId">
+       <string>Recotacao_GO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>RecotacaoMG</string>
+      </void>
+      <void property="groupId">
+       <string>RecotacaoMG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>RecotacaoPR</string>
+      </void>
+      <void property="groupId">
+       <string>RecotacaoPR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G7-GESTORES</string>
+      </void>
+      <void property="groupId">
+       <string>G7-GESTORES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G7-ATRIBUICAO</string>
+      </void>
+      <void property="groupId">
+       <string>G7-ATRIBUICAO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE LOGÍSTICA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-ANALISELOGISTICA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE COMPRAS</string>
+      </void>
+      <void property="groupId">
+       <string>G10-ANALISECOMPRAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - RECEBIMENTO DA LOCAÇAO</string>
+      </void>
+      <void property="groupId">
+       <string>G10-RECEBIMENTOLOCACAO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - DEVOLUÇÃO COMPRAS</string>
+      </void>
+      <void property="groupId">
+       <string>G10-DEVOLUCAOCOMPRAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Santa Cruz Do Sul</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoSantaCruzDoSul</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG.SANTA CRUZ DO SUL - MONTAGEM DE ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SANTACRUZDOSUL-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG.SANTA CRUZ DO SUL - EM ROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SANTACRUZDOSUL-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG.SANTA CRUZ DO SUL - ENTREGA PARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SANTACRUZDOSUL-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG.SANTA CRUZ DO SUL - MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.SANTACRUZDOSUL-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo de G6 de ressuprimento</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RessuprimentoSANTACRUZDOSUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Santa Cruz do Sul</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoSantaCruzDoSul</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado Porto Alegre</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoPortoAlegre</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA NATAL</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICANATAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA POA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAPOA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA JP</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAJP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA VERANOPOLIS</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAVERANOPOLIS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA PELOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAPELOTAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA MG</string>
+      </void>
+      <void property="groupId">
+       <string>G10 - LOGISTICA MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA CG</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICACG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA MACAIBA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAMACAIBA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA NOVA CRUZ</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICANOVACRUZ</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA PDF</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAPDF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA MARINGA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAMARINGA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA CAMPO MOURÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICACAMPOMOURAO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA LONDRINA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICALONDRINA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA SANTA CRUZ DO SUL</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICASANTACRUZDOSUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA PE</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICAPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10-FLUIGFLUIG</string>
+      </void>
+      <void property="groupId">
+       <string>G10-FLUIGFLUIG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>APROVAÇÃO MARINGA LOTE 52</string>
+      </void>
+      <void property="groupId">
+       <string>APROVACAOMARINGALOTE52</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>GESTORES G10</string>
+      </void>
+      <void property="groupId">
+       <string>G10-GESTORES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS MACAIBA</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosMacaiba_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS NATAL</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosnatal_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS MOSSORO</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosmossoro_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS CG</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosCG_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS JP</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosJP_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS SUPLAN</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadossuplan_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS PELOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosPelotas_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS VERANOPOLIS</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosVeranopolis_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS PAUDOSFERROS</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosPauDosFerros_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS NOVACRUZ</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosNovaCruz_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosMG_G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosMG_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosItamaraty_G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosItamaraty_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosGO_G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosGO_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosDF_G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosDF_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosRS _G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosRS _G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>SolicitacaoEmAnaliseTatianaG5</string>
+      </void>
+      <void property="groupId">
+       <string>SolicitacaoEmAnaliseTatianaG5</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>SolicitacaoEmAnaliseThiagoG5</string>
+      </void>
+      <void property="groupId">
+       <string>SolicitacaoEmAnaliseThiagoG5</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>SolicitacaoEmAnaliseMariaLuizaG5</string>
+      </void>
+      <void property="groupId">
+       <string>SolicitacaoEmAnaliseMariaLuizaG5</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosMaringa_G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosMaringa_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ProdutosSeparadosPortoAlegre_G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosPortoAlegre_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 Visualizadores</string>
+      </void>
+      <void property="groupId">
+       <string>G5_visualizadores</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - Almoxarifado Curitiba</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoCuritiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Almoxarifado Curitiba</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoCuritiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - FLUIG</string>
+      </void>
+      <void property="groupId">
+       <string>Suporte</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE LOGÍSTICA NORDESTE</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_LOGISTICA_NORDESTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE LOGÍSTICA SUL</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_LOGISTICA_SUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE LOGÍSTICA CENTRO</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_LOGISTICA_CENTRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE LOGÍSTICA MG</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_LOGISTICA_MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE COMPRAS NORDESTE</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_COMPRAS_NORDESTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE COMPRAS SUL</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_COMPRAS_SUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE COMPRAS CENTRO</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_COMPRAS_CENTRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE COMPRAS MG</string>
+      </void>
+      <void property="groupId">
+       <string>G10_ANALISE_COMPRAS_MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - RECEBIMENTO DA LOCAÇÃO NORDESTE</string>
+      </void>
+      <void property="groupId">
+       <string>G10_RECEBIMENTO_DA_ALOCACAO_NORDESTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - RECEBIMENTO DA LOCAÇÃO SUL</string>
+      </void>
+      <void property="groupId">
+       <string>G10_RECEBIMENTO_DA_ALOCACAO_SUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - RECEBIMENTO DA LOCAÇÃO CENTRO</string>
+      </void>
+      <void property="groupId">
+       <string>G10_RECEBIMENTO_DA_ALOCACAO_CENTRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - RECEBIMENTO DA LOCAÇÃO MG</string>
+      </void>
+      <void property="groupId">
+       <string>G10_RECEBIMENTO_DA_ALOCACAO_MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - EQUIPAMENTO AVARIADO NORDESTE</string>
+      </void>
+      <void property="groupId">
+       <string>G10_EQUIPAMENTO_AVARIADO_NORDESTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - EQUIPAMENTO AVARIADO SUL</string>
+      </void>
+      <void property="groupId">
+       <string>G10_EQUIPAMENTO_AVARIADO_SUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - EQUIPAMENTO AVARIADO CENTRO</string>
+      </void>
+      <void property="groupId">
+       <string>G10_EQUIPAMENTO_AVARIADO_CENTRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - EQUIPAMENTO AVARIADO MG</string>
+      </void>
+      <void property="groupId">
+       <string>G10_EQUIPAMENTO_AVARIADO_MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - DEVOLUÇÃO COMPRAS NORDESTE</string>
+      </void>
+      <void property="groupId">
+       <string>G10_DEVOLUCAO_COMPRAS_NORDESTE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - DEVOLUÇÃO COMPRAS SUL</string>
+      </void>
+      <void property="groupId">
+       <string>G10_DEVOLUCAO_COMPRAS_SUL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - DEVOLUÇÃO COMPRAS CENTRO</string>
+      </void>
+      <void property="groupId">
+       <string>G10_DEVOLUCAO_COMPRAS_CENTRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - DEVOLUÇÃO COMPRAS MG</string>
+      </void>
+      <void property="groupId">
+       <string>G10_DEVOLUCAO_COMPRAS_MG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - ANÁLISE CONTROLADORIA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-ANALISE_CONTROLADORIA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM CURITIBA</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_CURITIBA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica Curitiba</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaCuritiba</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Produtos Separados CM - G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosCM_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA CURITIBA</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICACURITIBA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOGISTICA CURITIBA MONTAGEMDEROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-CURITIBA-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG CURITIBA EMROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-CURITIBA-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - PRODUTOS SEPARADOS CURITIBA</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosCuritiba_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG CURITIBA ENTREGAPARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-CURITIBA-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG CURITIBA MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-CURITIBA-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6-  RESSUPRIMENTO CURITIBA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTO-CURITIBA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - Produtos Separados Santa Cruz Do Sul </string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosSantaCruzDoSul _G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO - ENGPAC - VALIDAR NF</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRO-ENGPAC-VALIDARNF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO - GENNESIS-  VALIDAR NF</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRO-GENNESIS-VALIDARNF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G5 - FINANCEIRO - ECONTECX - VALIDAR NF</string>
+      </void>
+      <void property="groupId">
+       <string>G5-FINANCEIRO-ECONTECX-VALIDARNF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - LogisticaSantaCruzDoSul</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaSantaCruzDoSul</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>LogisticaNovaCruz</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaNovaCruz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>LogisticaPauDosFerros</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaPauDosFerros</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4-FLUIG FLUIG</string>
+      </void>
+      <void property="groupId">
+       <string>G4-FLUIG FLUIG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Relatório G4</string>
+      </void>
+      <void property="groupId">
+       <string>relatorio-g4</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - ComprasPatoBranco</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasPatoBranco</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - Compras Foz Do Iguacu</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasFozDoIguacu</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - Compras Toledo</string>
+      </void>
+      <void property="groupId">
+       <string>ComprasToledo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - Almoxarifado Goiore</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoGoiore</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - Almoxarifado Pitanga</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoPitanga</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3 - COLIGADA2 - LOTE - 52</string>
+      </void>
+      <void property="groupId">
+       <string>G3-COLIGADA2-LOTE-52</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>LOGÍSTICA JP</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGISTICA JP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logística Macaíba</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGSTICA MACABA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>LOGISTICA DF</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA DF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA PELOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA PELOTAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA BH</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA BH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA CAMPO MOURÃO</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA CAMPO MOURÃO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11-LOGÍSTICA RN</string>
+      </void>
+      <void property="groupId">
+       <string>G11-LOGÍSTICA RN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA CG</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA CG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA LONDRINA</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA LONDRINA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA MARINGÁ</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA MARINGÁ</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA GO</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA GO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA RECIFE</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA RECIFE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA RS</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA RS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - LOGÍSTICA CURITIBA</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - LOGÍSTICA CURITIBA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM BH</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM BH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM PARANÁ</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM PARANÁ</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM CG</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM CG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM GO</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM GO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM DF</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM DF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM JP</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM JP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM RN</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM RN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM RS</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM RS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G11 - ADM PE</string>
+      </void>
+      <void property="groupId">
+       <string>G11 - ADM PE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G3 - VALIDACAO FRETE</string>
+      </void>
+      <void property="groupId">
+       <string>G3-VALIDACAO-FRETE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Compras BH</string>
+      </void>
+      <void property="groupId">
+       <string>comprasbh</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Recotação BH</string>
+      </void>
+      <void property="groupId">
+       <string>recotacaobh</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Logistica BH</string>
+      </void>
+      <void property="groupId">
+       <string>logisticabh</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Almoxarifado BH</string>
+      </void>
+      <void property="groupId">
+       <string>almoxarifadobh</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>ADM BH</string>
+      </void>
+      <void property="groupId">
+       <string>ADM_BH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Produtos SeparadosBH G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosBH_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Ressuprimento BH</string>
+      </void>
+      <void property="groupId">
+       <string>RessuprimentoBH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICABH</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICABH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Grupo de logistica do estoque de extremoz</string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaExtremoz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - AlmoxarifadoExtremoz</string>
+      </void>
+      <void property="groupId">
+       <string>G6-AlmoxarifadoExtremoz</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOGISTICA .EXTREMOZ MONTAGEMDEROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG.EXTREMOZ-MONTAGEMDEROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOGISTICA EXTREMOZ EMROTA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-EXTREMOZ-EMROTA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG EXTREMOZ ENTREGAPARCIAL</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-EXTREMOZ-ENTREGAPARCIAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - LOG EXTREMOZ MATERIAL PENDENTE EM OBRA</string>
+      </void>
+      <void property="groupId">
+       <string>G6-LOG-EXTREMOZ-MATERIALPENDENTEEMOBRA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>Produtos Separados Extremoz G6</string>
+      </void>
+      <void property="groupId">
+       <string>ProdutosSeparadosExtremoz_G6</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G6 - RESSUPRIMENTO EXTREMOZ</string>
+      </void>
+      <void property="groupId">
+       <string>G6-RESSUPRIMENTO-EXTREMOZ</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10 - LOGISTICA EXTREMOZ</string>
+      </void>
+      <void property="groupId">
+       <string>G10-LOGISTICA-EXTREMOZ</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - ALMOXARIFADO BAHIA</string>
+      </void>
+      <void property="groupId">
+       <string>AlmoxarifadoBahia</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G4 - LOGISTICA BAHIA </string>
+      </void>
+      <void property="groupId">
+       <string>LogisticaBahia</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G10--LOGISTICABAHIA</string>
+      </void>
+      <void property="groupId">
+       <string>G10--LOGISTICABAHIA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12-  ANALISECONTRATOS PB</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ANALISECONTRATOS-PB</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 ANALISECONTRATOS GERAL</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ANALISECONTRATOS-GERAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 ANALISECONTRATOS DFGO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ANALISECONTRATOS-DFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ENGPAC FATURAR NOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ENGPAC-FATURAR-NOTAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - GENNESIS FATURAR NOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>G12-GENNESIS-FATURAR-NOTAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ECONTECX FATURAR NOTAS</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ECONTECX-FATURAR-NOTAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ERROSDETRANSMISSAO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ERROSDETRANSMISSAO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12-ERROSDEAJUSTEFINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ERROSDEAJUSTEFINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ERROSDECANCELAMENTO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ERROSDECANCELAMENTO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - CHECAGEMTRANSMISSAO CONTRATOS PB</string>
+      </void>
+      <void property="groupId">
+       <string>G12-CHECAGEMTRANSMISSAO-CONTRATOS-PB</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - CHECAGEMTRANSMISSAO CONTRATOS GERAL</string>
+      </void>
+      <void property="groupId">
+       <string>G12-CHECAGEMTRANSMISSAO-CONTRATOS-GERAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - CHECAGEMTRANSMISSAO CONTRATOS DFGO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-CHECAGEMTRANSMISSAO-CONTRATOS-DFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - AGUARDANDO RECEBIMENTO CONTRATOS PB</string>
+      </void>
+      <void property="groupId">
+       <string>G12-AGUARDANDO-RECEBIMENTO-CONTRATOS-PB</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - AGUARDANDO RECEBIMENTO CONTRATOS GERAL</string>
+      </void>
+      <void property="groupId">
+       <string>G12-AGUARDANDO-RECEBIMENTO-CONTRATOS-GERAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - AGUARDANDO RECEBIMENTO CONTRATOS DFGO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-AGUARDANDO-RECEBIMENTO-CONTRATOS-DFGO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ENGPAC NFSE TRANSMITIDA</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ENGPAC-NFSE-TRANSMITIDA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - GENNESIS NFSE TRANSMITIDA</string>
+      </void>
+      <void property="groupId">
+       <string>G12-GENNESIS-NFSE-TRANSMITIDA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ECONTECX NFSE TRANSMITIDA</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ECONTECX-NFSE-TRANSMITIDA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ENGPAC AJUSTE FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ENGPAC-AJUSTE-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - GENNESIS AJUSTE FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-GENNESIS-AJUSTE-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.GroupDto">
+      <void property="groupDescription">
+       <string>G12 - ECONTECX AJUSTE FINANCEIRO</string>
+      </void>
+      <void property="groupId">
+       <string>G12-ECONTECX-AJUSTE-FINANCEIRO</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="57">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Aprovação Solicitação de Compras</string>
+      </void>
+      <void index="1">
+       <string>aprovacaoSC</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Aprovação Requisição de Materiais</string>
+      </void>
+      <void index="1">
+       <string>aprovacao_rm</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Aprovação Gestor de Compras Ordem de Compras</string>
+      </void>
+      <void index="1">
+       <string>APROVADORES_COMPRAS</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Aprovação Diretoria Ordem de Compra</string>
+      </void>
+      <void index="1">
+       <string>APROVADORES_DIRETORIA</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Aprovação Engenharia Ordem de Compra</string>
+      </void>
+      <void index="1">
+       <string>APROVADORES_ENGENHARIA</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Aprovação Estoque Ordem de Compra</string>
+      </void>
+      <void index="1">
+       <string>APROVADORES_ESTOQUE</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="9">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G10-groupvalidation</string>
+      </void>
+      <void index="1">
+       <string>G10-groupvalidation</string>
+      </void>
+     </array>
+    </void>
+    <void index="10">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Mecanismo customizado G10 Setor Técnico</string>
+      </void>
+      <void index="1">
+       <string>G10-MecAprovacaoET</string>
+      </void>
+     </array>
+    </void>
+    <void index="11">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-AGUARDANDORECEB</string>
+      </void>
+      <void index="1">
+       <string>G12-AGUARDANDORECEB</string>
+      </void>
+     </array>
+    </void>
+    <void index="12">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-AJUSTE-FINANCEIRO</string>
+      </void>
+      <void index="1">
+       <string>G12-AJUSTE-FINANCEIRO</string>
+      </void>
+     </array>
+    </void>
+    <void index="13">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-AJUSTE-SOLICITACAO</string>
+      </void>
+      <void index="1">
+       <string>G12-AJUSTE-SOLICITACAO</string>
+      </void>
+     </array>
+    </void>
+    <void index="14">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-APROVACAO-ST</string>
+      </void>
+      <void index="1">
+       <string>G12-APROVACAO-ST</string>
+      </void>
+     </array>
+    </void>
+    <void index="15">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-CHECAGEMDETRANSMISSAO</string>
+      </void>
+      <void index="1">
+       <string>G12-CHECAGEMDETRANSMISSAO</string>
+      </void>
+     </array>
+    </void>
+    <void index="16">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-CONTRATOS-VALIDA</string>
+      </void>
+      <void index="1">
+       <string>G12-CONTRATOS-VALIDA</string>
+      </void>
+     </array>
+    </void>
+    <void index="17">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-FATURAR-NOTAS</string>
+      </void>
+      <void index="1">
+       <string>G12-FATURAR-NOTAS</string>
+      </void>
+     </array>
+    </void>
+    <void index="18">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-NFSE-TRANSMITIDA</string>
+      </void>
+      <void index="1">
+       <string>G12-NFSE-TRANSMITIDA</string>
+      </void>
+     </array>
+    </void>
+    <void index="19">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G12-VALIDIACAO-CONTRATOS</string>
+      </void>
+      <void index="1">
+       <string>G12-VALIDIACAO-CONTRATOS</string>
+      </void>
+     </array>
+    </void>
+    <void index="20">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G3-ANALISE-CONTROLADORIA</string>
+      </void>
+      <void index="1">
+       <string>G3-ANALISE-CONTROLADORIA</string>
+      </void>
+     </array>
+    </void>
+    <void index="21">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G3-VALIDACAO-FRETE</string>
+      </void>
+      <void index="1">
+       <string>G3-VALIDACAO-FRETE</string>
+      </void>
+     </array>
+    </void>
+    <void index="22">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G3_MapaDeCotacao</string>
+      </void>
+      <void index="1">
+       <string>G3_MapaDeCotacao</string>
+      </void>
+     </array>
+    </void>
+    <void index="23">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G4-RETIRADALOGISTICA</string>
+      </void>
+      <void index="1">
+       <string>G4-RETIRADALOGISTICA</string>
+      </void>
+     </array>
+    </void>
+    <void index="24">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G5_SolicitacaoEmAnalise</string>
+      </void>
+      <void index="1">
+       <string>G5_SolicitacaoEmAnalise</string>
+      </void>
+     </array>
+    </void>
+    <void index="25">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G5_VALIDACAONF_MACANISMO</string>
+      </void>
+      <void index="1">
+       <string>G5_VALIDACAONF_MACANISMO</string>
+      </void>
+     </array>
+    </void>
+    <void index="26">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6 - Almoxarifado</string>
+      </void>
+      <void index="1">
+       <string>G6 - Almoxarifado</string>
+      </void>
+     </array>
+    </void>
+    <void index="27">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6 - Logistica</string>
+      </void>
+      <void index="1">
+       <string>G6 - Logistica</string>
+      </void>
+     </array>
+    </void>
+    <void index="28">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6-LogisticaEmRota</string>
+      </void>
+      <void index="1">
+       <string>G6-LogisticaEmRota</string>
+      </void>
+     </array>
+    </void>
+    <void index="29">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6-LogisticaEnt.Parcial</string>
+      </void>
+      <void index="1">
+       <string>G6-LogisticaEnt.Parcial</string>
+      </void>
+     </array>
+    </void>
+    <void index="30">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6-LogisticaMat.Pend</string>
+      </void>
+      <void index="1">
+       <string>G6-LogisticaMat.Pend</string>
+      </void>
+     </array>
+    </void>
+    <void index="31">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6-ProdutosSeparados</string>
+      </void>
+      <void index="1">
+       <string>G6-ProdutosSeparados</string>
+      </void>
+     </array>
+    </void>
+    <void index="32">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G6-Ressuprimento</string>
+      </void>
+      <void index="1">
+       <string>G6-Ressuprimento</string>
+      </void>
+     </array>
+    </void>
+    <void index="33">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.ContabilidadeNF</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.ContabilidadeNF</string>
+      </void>
+     </array>
+    </void>
+    <void index="34">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.ContratosNF</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.ContratosNF</string>
+      </void>
+     </array>
+    </void>
+    <void index="35">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.EngNF</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.EngNF</string>
+      </void>
+     </array>
+    </void>
+    <void index="36">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.FinanceiroNF</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.FinanceiroNF</string>
+      </void>
+     </array>
+    </void>
+    <void index="37">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.NFemissao</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.NFemissao</string>
+      </void>
+     </array>
+    </void>
+    <void index="38">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.NFemitida</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.NFemitida</string>
+      </void>
+     </array>
+    </void>
+    <void index="39">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-Mec.NovasSolicitacoesFIN</string>
+      </void>
+      <void index="1">
+       <string>G8-Mec.NovasSolicitacoes</string>
+      </void>
+     </array>
+    </void>
+    <void index="40">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-MecAjusteContratos</string>
+      </void>
+      <void index="1">
+       <string>G8-MecAjusteContratos</string>
+      </void>
+     </array>
+    </void>
+    <void index="41">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-MecNFemitida</string>
+      </void>
+      <void index="1">
+       <string>G8-MecNFemitida</string>
+      </void>
+     </array>
+    </void>
+    <void index="42">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G8-MecNovasSolicitacoesContratos</string>
+      </void>
+      <void index="1">
+       <string>G8-MecNovasSolicitacoes</string>
+      </void>
+     </array>
+    </void>
+    <void index="43">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="44">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="45">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G4 - Grupo Compras</string>
+      </void>
+      <void index="1">
+       <string>grupo_compras</string>
+      </void>
+     </array>
+    </void>
+    <void index="46">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G4 - Grupo Estoque</string>
+      </void>
+      <void index="1">
+       <string>grupo_estoque</string>
+      </void>
+     </array>
+    </void>
+    <void index="47">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>G4 - Grupo Financeiro</string>
+      </void>
+      <void index="1">
+       <string>grupo_financeiro</string>
+      </void>
+     </array>
+    </void>
+    <void index="48">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>mecanismoPersonalizado</string>
+      </void>
+      <void index="1">
+       <string>mecanismoPersonalizado</string>
+      </void>
+     </array>
+    </void>
+    <void index="49">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>MecRetiradaFornecedorG10</string>
+      </void>
+      <void index="1">
+       <string>MecRetiradaFornecedorG10</string>
+      </void>
+     </array>
+    </void>
+    <void index="50">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>mec_notificacao</string>
+      </void>
+      <void index="1">
+       <string>mec_notificacao</string>
+      </void>
+     </array>
+    </void>
+    <void index="51">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="52">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="53">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="54">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Recotação_G3</string>
+      </void>
+      <void index="1">
+       <string>Recotação_G3</string>
+      </void>
+     </array>
+    </void>
+    <void index="55">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>SetorTecnico_G4</string>
+      </void>
+      <void index="1">
+       <string>SetorTecnico_G4</string>
+      </void>
+     </array>
+    </void>
+    <void index="56">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
