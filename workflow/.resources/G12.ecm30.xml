@@ -29,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>G12</processId>
-      <version>6</version>
+      <version>8</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>1276366</formId>
@@ -7567,7 +7567,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>1</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>177</sequence>
       </conditionProcessStatePK>
       <condition>gerAtualizacaoCNOPB() == true</condition>
@@ -7579,7 +7579,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>2</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>177</sequence>
       </conditionProcessStatePK>
       <condition>gerAtualizacaoCNOPB() == false </condition>
@@ -7591,7 +7591,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>1</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>246</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7603,7 +7603,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>2</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>246</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7615,7 +7615,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>3</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>246</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7627,7 +7627,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>1</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>291</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7639,7 +7639,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>2</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>291</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7651,7 +7651,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>3</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>291</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7663,7 +7663,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>1</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>388</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7675,7 +7675,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>2</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>388</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7687,7 +7687,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>3</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>388</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -7699,7 +7699,7 @@
         <companyId>1</companyId>
         <processId>G12</processId>
         <expressionOrder>4</expressionOrder>
-        <version>6</version>
+        <version>8</version>
         <sequence>388</sequence>
       </conditionProcessStatePK>
       <condition>false</condition>
@@ -10683,7 +10683,7 @@
 
 	log.info(&quot;CODCOLIGADA: &quot; + codColigada + &quot; | CODFILIAL: &quot; + codFilial);
 
-	try { /* */ var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+	try { /* */ var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
 		var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
 		var ws = instancia.getRMIwsDataServer();
 		var properties = {};
@@ -11054,7 +11054,7 @@ function getDatasetError(exception) {&#xd;
 &#xd;
     log.info(&quot;CODCOLIGADA: &quot; + codColigada + &quot; | IDPRJ: &quot; + idPrj + &quot; | CNOPB: &quot; + cnopb + &quot; | CODFILIAL: &quot; + codFilial);&#xd;
 &#xd;
-    try { /* */ var servico = ServiceManager.getService(&quot;wsDataServer&quot;);&#xd;
+    try { /* */ var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);&#xd;
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);&#xd;
         var ws = instancia.getRMIwsDataServer();&#xd;
         var properties = {};&#xd;
@@ -11433,25 +11433,32 @@ function gerAtualizacaoCNOPB() {&#xd;
 &#xd;
         var CentroDeCusto = hAPI.getCardValue(&apos;centro_de_custo&apos;);&#xd;
         var CodColigada = hAPI.getCardValue(&apos;coligada&apos;);&#xd;
+        var campoPreenchido = hAPI.getCardValue(&quot;CNOPB&quot;);&#xd;
 &#xd;
         if (!CodColigada) throw (&quot;Nenhum centro de custo encontrado no formulário &quot;);&#xd;
         if (!CentroDeCusto) throw (&quot;Nenhum centro de custo encontrado no formulário &quot;);&#xd;
 &#xd;
-        if (CodColigada == 2) {&#xd;
-            if (CentroDeCusto == &quot;02.01.01.01.001&quot; /* ADM REGIONAL JOAO PESSOA */&#xd;
-                || CentroDeCusto == &quot;02.01.01.01.003&quot; /* SEECT PB ITEM 1 */&#xd;
-                || CentroDeCusto == &quot;02.01.01.01.004&quot; /* SEECT PB ITEM 2 */&#xd;
-                || CentroDeCusto == &quot;02.01.01.01.008&quot; /* ADM REGIONAL PARAIBA */&#xd;
-                || CentroDeCusto == &quot;02.01.01.01.010&quot; /* SEINFRA PB - REFORMA ESCOLAS */&#xd;
-                || CentroDeCusto == &quot;02.01.01.01.011&quot; /* ICMBIO - PB */&#xd;
-                || CentroDeCusto == &quot;02.01.01.01.012&quot; /* SUPLAN - PB */&#xd;
-                || CentroDeCusto == &quot;02.01.01.02.001&quot; /* ADM REGIONAL CAMPINA GRANDE */&#xd;
-                || CentroDeCusto == &quot;02.01.01.02.003&quot; /* SEECT PB ITEM 3 */&#xd;
-                || CentroDeCusto == &quot;02.01.01.02.004&quot; /* SEECT PB ITEM 4 */&#xd;
-                || CentroDeCusto == &quot;02.01.01.02.005&quot; /* SEECT PB ITEM 5 */&#xd;
-                || CentroDeCusto == &quot;02.01.01.02.007&quot; /* SEDUC - PB */) {&#xd;
-                return true;&#xd;
-            }&#xd;
+        // if (CodColigada == 2) {&#xd;
+        //     if (CentroDeCusto == &quot;02.01.01.01.001&quot; /* ADM REGIONAL JOAO PESSOA */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.01.003&quot; /* SEECT PB ITEM 1 */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.01.004&quot; /* SEECT PB ITEM 2 */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.01.008&quot; /* ADM REGIONAL PARAIBA */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.01.010&quot; /* SEINFRA PB - REFORMA ESCOLAS */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.01.011&quot; /* ICMBIO - PB */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.01.012&quot; /* SUPLAN - PB */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.02.001&quot; /* ADM REGIONAL CAMPINA GRANDE */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.02.003&quot; /* SEECT PB ITEM 3 */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.02.004&quot; /* SEECT PB ITEM 4 */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.02.005&quot; /* SEECT PB ITEM 5 */&#xd;
+        //         || CentroDeCusto == &quot;02.01.01.02.007&quot; /* SEDUC - PB */) {&#xd;
+        //         return true;&#xd;
+        //     }&#xd;
+        // }&#xd;
+&#xd;
+        // return false;&#xd;
+&#xd;
+        if (campoPreenchido != null || campoPreenchido != undefined || campoPreenchido != &quot;&quot;) {&#xd;
+            return true;&#xd;
         }&#xd;
 &#xd;
         return false;&#xd;
@@ -11573,7 +11580,7 @@ function gerAtualizacaoCNOPB() {&#xd;
     }
 
     try {
-        var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
 
@@ -11985,7 +11992,7 @@ function getConstante(param) {
     }
 
     try {
-        var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
 
@@ -12102,7 +12109,7 @@ function formatarParaRM(valor) {
 
     log.info(&quot;CODCOLIGADA: &quot; + codColigada + &quot; | CODFILIAL: &quot; + codFilial);
 
-    try { /* */ var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+    try { /* */ var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
         var properties = {};
@@ -12208,14 +12215,6 @@ function formatarParaRM(valor) {
 
         log.info(&quot;[G12-AJUSTAR-COMPETENCIA] Resultado &quot; + &quot;: &quot; + resultado);
 
-
-        if (resultado &amp;&amp; String(resultado).indexOf(&quot;Exception&quot;) !== -1) {
-            throw new Error(&quot;Erro retornado pelo RM: &quot; + resultado);
-        }
-
-        if (resultado &amp;&amp; String(resultado).indexOf(&quot;Error&quot;) !== -1) {
-            throw new Error(&quot;Erro retornado pelo RM: &quot; + resultado);
-        }
 
         hAPI.setCardValue(&quot;CompetenciaAlterada&quot;, &quot;1&quot;)
 
@@ -12428,7 +12427,7 @@ function getDatasetError(exception) {&#xd;
 
     log.info(&quot;CODCOLIGADA: &quot; + codColigada + &quot; | IDPRJ: &quot; + idPrj + &quot; | CNOPB: &quot; + cnopb + &quot; | CODFILIAL: &quot; + codFilial);
 
-    try { /* */ var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+    try { /* */ var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
         var properties = {};
@@ -12879,7 +12878,7 @@ function getConstante(param) {&#xd;
     }
 
     try {
-        var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
 
@@ -13121,6 +13120,7 @@ function loadDsG12(codColigada, idMov) {&#xd;
         hAPI.setCardValue(&apos;nome_produto&apos;, safe(dataset.getValue(0, &quot;NOME_PRODUTO&quot;)));&#xd;
         hAPI.setCardValue(&apos;codigo_produto&apos;, safe(dataset.getValue(0, &quot;CODIGO_PRODUTO&quot;)));&#xd;
         hAPI.setCardValue(&apos;idContrato&apos;, safe(dataset.getValue(0, &quot;ID_CONTRATO&quot;)));&#xd;
+        hAPI.setCardValue(&apos;objeto_contratual&apos;, safe(dataset.getValue(0, &quot;OBJETO_CONTRATUAL&quot;)));&#xd;
 &#xd;
 &#xd;
         // CAMPOS DO PRESTADOR&#xd;
@@ -13378,7 +13378,7 @@ function formatDate(rawDate) {&#xd;
 
 
     function criarClienteRM() {
-        var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
 
@@ -13969,7 +13969,7 @@ function getDatasetError(exception) {
     }
     if (codigoIrrf != &quot;&quot; &amp;&amp; codigoIrrf != null &amp;&amp; codigoIrrf != &quot;undefined&quot;) {
         try {
-            var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+            var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
             var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
             var ws = instancia.getRMIwsDataServer();
 
@@ -14666,7 +14666,7 @@ function getDatasetError(exception) {
     }
 
     try {
-        var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
 
@@ -14818,7 +14818,7 @@ function getConstante(param) {
 
         log.info(&quot;CODCOLIGADA: &quot; + codColigada + &quot; | CODFILIAL: &quot; + codFilial);
 
-        try { /* */ var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        try { /* */ var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
             var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
             var ws = instancia.getRMIwsDataServer();
             var properties = {};
@@ -14881,7 +14881,7 @@ function getConstante(param) {
 
 
     try {
-        var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+        var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
         var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
         var ws = instancia.getRMIwsDataServer();
 
@@ -15002,7 +15002,7 @@ function getConstante(param) {
     for (var k = 0; k &lt; codigosIrrf.length; k++) {
         var codigoIrrf = codigosIrrf[k];
         try {
-            var servico = ServiceManager.getService(&quot;wsDataServer&quot;);
+            var servico = ServiceManager.getService(&quot;RMWsDataServer&quot;);
             var instancia = servico.instantiate(&quot;com.totvs.WsDataServer&quot;);
             var ws = instancia.getRMIwsDataServer();
 
@@ -15491,7 +15491,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>179</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -15502,7 +15502,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>179</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -15513,7 +15513,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>232</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -15524,7 +15524,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>232</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -15535,7 +15535,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>266</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -15546,7 +15546,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>266</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -15557,7 +15557,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>280</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -15568,7 +15568,7 @@ function getConstante(param) {
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>G12</processId>
-        <version>6</version>
+        <version>8</version>
         <linkSequence>280</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -15895,7 +15895,7 @@ function getConstante(param) {
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>G12</processId>
-      <processVersion>6</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>17</stateSequence>
       <appKey>approval</appKey>
       <appField>approve</appField>
@@ -15905,7 +15905,7 @@ function getConstante(param) {
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>G12</processId>
-      <processVersion>6</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>17</stateSequence>
       <appKey>approval</appKey>
       <appField>reject</appField>
@@ -15915,7 +15915,7 @@ function getConstante(param) {
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>G12</processId>
-      <processVersion>6</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>173</stateSequence>
       <appKey>approval</appKey>
       <appField>approve</appField>
@@ -15925,7 +15925,7 @@ function getConstante(param) {
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>G12</processId>
-      <processVersion>6</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>173</stateSequence>
       <appKey>approval</appKey>
       <appField>reject</appField>
@@ -15935,7 +15935,7 @@ function getConstante(param) {
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>G12</processId>
-      <processVersion>6</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>278</stateSequence>
       <appKey>approval</appKey>
       <appField>approve</appField>
@@ -15945,7 +15945,7 @@ function getConstante(param) {
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>G12</processId>
-      <processVersion>6</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>278</stateSequence>
       <appKey>approval</appKey>
       <appField>reject</appField>
